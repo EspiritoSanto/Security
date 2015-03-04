@@ -1,0 +1,239 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AAD00ABC-4200-BA37-64E8-D980B3049761" name="Translation">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>F76F555D-7DAD-1FFB-B608-12E332D4CE10</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="20245572-2B80-E3DD-EC4A-412D05C6DFE7">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>55B065CF-3880-D20D-F417-896B0235D971</importedID>
+<constraintName>Translation_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="tableName" id="9D1A1CCF-17AC-4307-C528-F4AEBD6DC06B">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Name of the table whose value of column will be translated.&lt;br/&gt;&lt;br/&gt;Nome da tabela, cujo valor da coluna será traduzido.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>6451ED8A-28F7-F123-F1D6-1EE91CED9444</importedID>
+<constraintName>Translation_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>22 BYTE</dataTypeSize>
+<domain>19830B51-9EC7-7753-874B-B7F2008DBB80</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="columnName" id="4991C019-DDBD-34D3-4FA2-97AA755D33DA">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Name of the column whose value will be translated.&lt;br/&gt;&lt;br/&gt;Nome da coluna cujo valor será traduzido.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>303DAAA0-75CD-16A9-C9EF-DDCDDDB03727</importedID>
+<constraintName>Translation_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<domain>4BFD4977-3732-ED3D-348B-BFC3E5C7F851</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="primaryKey" id="2932A63F-0C2C-A7F3-BE64-C0DF31E5A7A1">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Primary key of the record whose value of column will be translated.&lt;br/&gt;&lt;br/&gt;Chave primária do registro cujo valor da coluna será traduzido.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>D50894F8-161D-0625-B0A4-1888AA68E193</importedID>
+<constraintName>Translation_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="idiomId" id="06C77619-4ABF-AC3E-B677-DDA4BA8B0985">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Idiom for which the column value will be translated.&lt;br/&gt;&lt;br/&gt;Idioma para o qual o valor da coluna será traduzido.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>8D6CB111-0CE2-133F-9041-63F73CC04D24</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>06D08C77-A5F3-3014-36A4-838FF27830A3</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="44D6D495-243B-35CC-4A8A-7F1A8E80009A" referredColumn="06D08C77-A5F3-3014-36A4-838FF27830A3"/>
+</associations>
+</Column>
+<Column name="translatedValue" id="942F6277-5463-07D9-F169-003323E61462">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>The translated value of the original column value.&lt;br/&gt;&lt;br/&gt;O valor traduzido do valor da coluna original.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>7EE74205-2304-6213-3026-4190D5D6A24D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<domain>5653DF00-308A-5360-11C9-B0291AF3BEAC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="translatorAgent" id="849DCA13-0950-F20B-194C-1D1660ACFE5A">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Who did the translation. Translations made ​​by the system can not be changed or deleted by the user. Below are the possible values:&lt;br&gt;&lt;br&gt;S - System&lt;br&gt;U - User&lt;br/&gt;&lt;br/&gt;Quem fez a tradução. Traduções feitas pelo sistema não podem ser alteradas ou excluídas pelo usuário. Abaixo estão os valores possíveis:&lt;br/&gt;&lt;br/&gt;S - Sistema&lt;br/&gt;U - Usuário</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>4F42BDB9-CF4F-D6DF-8013-5C8416FE3FE3</importedID>
+<constraintName>Translation_Chk_005</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<domain>AEE687CD-4A15-D5A7-EDC4-539944F4AB72</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtype" id="3716F1EE-BA55-0E2B-1956-5D7F4BA6B332">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-29 12:59:47 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the translation. The possible options are:&lt;br/&gt;&lt;br/&gt;G - Global translation&lt;br/&gt;L - Licensed&apos;s translation&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo da tradução. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;G - Tradução global&lt;br/&gt;L - Tradução de licensiado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Translation_Chk_006</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6686FE85-0855-8B63-D766-A6BD53E6AADC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="licensedId" id="69DE2128-E1F7-4B84-552A-CE6E284628CD">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Licensed to which this record belongs. Values translated by the system are global and are not related to a licensed.&lt;br/&gt;&lt;br/&gt;Licenciado para o qual esse registro pertence. Valores traduzidos pelo sistema são globais e não estão relacionadas a um licenciado.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>AD960F83-EC91-A7DE-A42A-EEF23203338D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>9AC1631A-CE63-D3D7-4C5F-B37C3722511B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84266353-8B77-14BC-6C28-B82A544F3CCE" referredColumn="9AC1631A-CE63-D3D7-4C5F-B37C3722511B"/>
+</associations>
+</Column>
+<Column name="active" id="FD658236-3882-789F-4EA5-38D9E571BA3F">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the translation is active or not.&lt;br&gt;&lt;br&gt;0 - False&lt;br&gt;1 - True&lt;br&gt;&lt;br/&gt;Sinal que indica se a tradução está ativa ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>87129859-3E3A-59F4-8BFF-DE4BE7B5E5AF</importedID>
+<constraintName>Translation_Chk_007</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="deleted" id="C86DA739-B558-AC4E-05A5-F9212B44D55C">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the translation is deleted or not.&lt;br&gt;&lt;br&gt;0 - False&lt;br&gt;1 - True&lt;br&gt;&lt;br/&gt;Sinal que indica se a tradução foi excluída ou não. &lt;br/&gt;&lt;br/&gt;0 - Falso &lt;br/&gt;1 - Verdadeiro&lt;br/&gt;</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>8E5564B8-9BAD-D299-D20C-D9C429C36BC6</importedID>
+<constraintName>Translation_Chk_008</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D40CF9C2-9310-0FA7-8EE4-A2E30B8E95F7" name="Translation_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>7AF8795F-1206-46A1-5A80-C7271C042DE8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20245572-2B80-E3DD-EC4A-412D05C6DFE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB56C184-A69E-A9F0-E597-4253A88A16E1" name="FK_Translation_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06C77619-4ABF-AC3E-B677-DDA4BA8B0985"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44BBE88B-5E5E-4958-E68F-720D42DB658A" name="FK_Translation_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69DE2128-E1F7-4B84-552A-CE6E284628CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

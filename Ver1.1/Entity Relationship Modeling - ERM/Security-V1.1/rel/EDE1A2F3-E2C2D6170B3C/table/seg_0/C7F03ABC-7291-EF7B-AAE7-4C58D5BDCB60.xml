@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7F03ABC-7291-EF7B-AAE7-4C58D5BDCB60" name="BRFederalUnit">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 11:40:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>3906A8A0-F299-B1DE-703E-69572DAAA0A7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="618A5544-1372-036D-072A-25B5F92D7A47">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 11:40:42 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table. Inherited of the AdmDivision table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela. Herdado da tabela AdmDivision.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>8C25258A-8AF3-A8F3-2685-F88A8C2B2C47</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>619AD03D-56B1-AB0B-FFFD-8A912B5B673A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA2E05B4-46CD-425E-8904-7FF898CFF151" referredColumn="619AD03D-56B1-AB0B-FFFD-8A912B5B673A"/>
+</associations>
+</Column>
+<Column name="acronym" id="BC88C41B-3120-035A-C65E-843ED33ECC1F">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 11:40:42 UTC</createdTime>
+<commentInRDBMS>Acronym used to uniquely to identify a brazilian federal unit.&lt;br/&gt;&lt;br/&gt;Acrônimo utilizado para identificar uma unidade federativa brasileira.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>BA35FA47-50F3-BD19-6510-1BF30330CB62</importedID>
+<constraintName>BRFederalUnit_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<domain>2AD33DFB-F641-F1E7-03BE-F3C64E4D4BBA</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brFederalUnitType" id="3238C5CD-A97C-F714-1EF7-5EBAF9FCC400">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:42:47 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the brazilian federal unit. The possible options are:&lt;br/&gt;&lt;br/&gt;S - State&lt;br/&gt;C - Federal Capital&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo da unidade federativa brasileira. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;S - Estado&lt;br/&gt;C - Capital Federal</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>BRFederalUnit_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>7999384B-6FB7-2255-22D5-8EF95D20D7D9</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC6FBFCA-4EE3-C677-A987-33D0230A0B2E" name="BRFederalUnit_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 11:40:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>070EAAFD-D97F-7F9B-03BC-5530ACCF2EEF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="618A5544-1372-036D-072A-25B5F92D7A47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="698CA77C-7E87-87DA-7DE3-52ABBC153867" name="BRFederalUnit_AK_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 09:48:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC88C41B-3120-035A-C65E-843ED33ECC1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B240D503-69F6-D379-444F-BB3BA585D117" name="FK_BRFederalUnit_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 11:40:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="618A5544-1372-036D-072A-25B5F92D7A47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

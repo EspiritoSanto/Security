@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBC581CE-200D-1D65-9AB5-CDB14D65220F" name="Event">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>700A6692-4C39-2F87-1169-6D2A115B5EF2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="759D735A-343A-BDF6-FAB3-82CC36551210">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>44703A0B-CAF4-4619-E4D5-B3E5B47F4ACF</importedID>
+<constraintName>Event_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="event" id="B410D2C1-FF7D-D4DE-4C6C-DA4091CE6914">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Denomination of the event to be displayed in the user interface. The idiom used is the one configured in Licensed table. Can be localized into other idioms.&lt;br/&gt;&lt;br/&gt;Denominação do evento a ser exibida na interface do usuário. O idioma utilizado é aquele configurado na tabela de licença. Pode ser localizado em outros idiomas.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>C787DD31-3A7A-1322-959F-FEEC507F9484</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E84E60CB-F2C2-B488-868F-A1489236F37F</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eventAlias" id="2A3A8764-FAFC-E10E-DF53-657D00BB0056">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Denomination of the event to be used in the source code of this software.&lt;br/&gt;&lt;br/&gt;Denominação do evento a ser utilizado no código fonte deste software.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>D44B8860-E464-59B4-29F7-EE845AEF6809</importedID>
+<constraintName>Event_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>41FE685A-F3B1-8F8F-E258-CF825EA12E85</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eventType" id="4A97822D-21C9-A9EE-7B48-CB4FB085B962">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Event type used in the source code to perform special tasks peculiar to the event. The possible values are:&lt;br/&gt;&lt;br/&gt;01 - User conection (Cenexão de usuário)&lt;br/&gt;02 - User disconection (Desconexão de usuário)&lt;br/&gt;03 - Password changing (Alteração de senha)&lt;br/&gt;04 - Routine access (Acesso à rotina)&lt;br/&gt;05 - Insertion of record (Inclusão de registro)&lt;br/&gt;06 - Exclusion of record (Exclusão de registro)&lt;br/&gt;07 - Change of record (Alteração de registro)&lt;br/&gt;08 - Interation with transient results (Interação com resultados transientes)&lt;br/&gt;09 - Interation with permanent results (Interação com resultados permanentes)&lt;br/&gt;10 - Recovering of information (Recuperação de informação)&lt;br/&gt;11 - Printing of information (Impressão de informação)&lt;br/&gt;12 - E-mail sending (Envio de e-mail)&lt;br/&gt;13 - Upload (Carrega de arquivo)&lt;br/&gt;14 - Download (Descarga de arquivo)&lt;br/&gt;15 - Exit of routine (Saída de rotina)&lt;br/&gt;&lt;br/&gt;Tipo de evento usado no código-fonte para executar tarefas especiais peculiares ao evento. Os valores possíveis são:&lt;br/&gt;&lt;br/&gt;01 - Cenexão de usuário&lt;br/&gt;02 - Desconexão de usuário&lt;br/&gt;03 - Alteração de senha&lt;br/&gt;04 - Acesso à rotina&lt;br/&gt;05 - Inclusão de registro&lt;br/&gt;06 - Exclusão de registro&lt;br/&gt;07 - Alteração de registro&lt;br/&gt;08 - Interação com resultados transientes&lt;br/&gt;09 - Interação com resultados permanentes&lt;br/&gt;10 - Recuperação de informação&lt;br/&gt;11 - Impressão de informação&lt;br/&gt;12 - Envio de e-mail&lt;br/&gt;13 - Carrega de arquivo&lt;br/&gt;14 - Descarga de arquivo&lt;br/&gt;15 - Saída de rotina</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>43BC637D-0304-2D9B-0DCD-6C075E179332</importedID>
+<constraintName>Event_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>890ECD5A-8C19-BB30-6DF6-4222DD3E43BF</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>15</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="routineId" id="25FE808D-A53D-BA2E-6A1C-6E04AADACC1F">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Routine to which this event belongs. Used to group the events of a same routine.&lt;br/&gt;&lt;br/&gt;Rotina à qual este evento pertence. Usada para agrupar os eventros de uma mesma rotina.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>D7939F27-A741-7637-1D54-0E4C741871A3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>B89E543D-04E6-227E-25B4-CF1FC8D92FA3</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16876B59-0985-4543-9760-783C388D3BB9" referredColumn="B89E543D-04E6-227E-25B4-CF1FC8D92FA3"/>
+</associations>
+</Column>
+<Column name="audited" id="3D572A02-A272-90E9-CFF4-8D517A1B02B9">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the event are being audited or not in the operation logging.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o evento está sendo auditado ou não no registro de operações.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>AD1E187D-9B2D-ECEC-433E-BD7CAC192B1D</importedID>
+<constraintName>Event_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="active" id="A0E3EC6A-1EC5-E8F5-3F70-C447CBD7383C">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the event is active or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o evento está ativo ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>E13063E7-AC6C-7608-D713-C707064FEA31</importedID>
+<constraintName>Event_Chk_005</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5FA12E8E-4884-E4C5-DEC9-248D8F0EE373" name="Event_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>C276C576-DA46-957E-4DA4-A8CE80C0EF52</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="759D735A-343A-BDF6-FAB3-82CC36551210"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F432390-0A3C-573E-2E17-C1D6DF6890D8" name="FK_Event_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25FE808D-A53D-BA2E-6A1C-6E04AADACC1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

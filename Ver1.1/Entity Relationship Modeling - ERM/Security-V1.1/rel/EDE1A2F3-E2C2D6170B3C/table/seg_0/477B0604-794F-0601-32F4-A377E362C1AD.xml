@@ -1,0 +1,796 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="477B0604-794F-0601-32F4-A377E362C1AD" name="Licensed">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>9D1A5000-7F05-013C-953C-8B7C393CCA58</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9AC1631A-CE63-D3D7-4C5F-B37C3722511B">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>726A1A5D-49D8-E151-A1B4-98C1B32248DF</importedID>
+<constraintName>Licensed_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="currencyId" id="921A94A0-B197-ED25-E8F5-D7E1F9C23AAD">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Standard currency used by licensed that contracted this software.&lt;br/&gt;&lt;br/&gt;Moeda padrão utilizada pelo licenciado que contratou este software.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>D8AA6AF0-10EA-733D-1058-2154AB5480CC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>37B1B6B9-B4F0-716C-6ED4-57FCEE0AC159</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4C99DA1-899B-9AB4-CAAF-E7B8A3759A2E" referredColumn="37B1B6B9-B4F0-716C-6ED4-57FCEE0AC159"/>
+</associations>
+</Column>
+<Column name="idiomId" id="E7BC4838-BFEC-931C-89A0-E782C8C8835A">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Standard idiom used by licensed that contracted this software.&lt;br/&gt;&lt;br/&gt;Idioma padrão usado pelo licenciado que contratou este software.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>06B436E4-737D-C0F9-4C24-BDEB010D940B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>06D08C77-A5F3-3014-36A4-838FF27830A3</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04E10EA3-EF82-010F-15EC-62710A0ABA59" referredColumn="06D08C77-A5F3-3014-36A4-838FF27830A3"/>
+</associations>
+</Column>
+<Column name="timeZoneId" id="A45742E2-3CB8-8E69-63AF-B0A6DADA4E53">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Standard time zone used by licensed that contracted this software.&lt;br/&gt;&lt;br/&gt;Fuso horário padrão usado pelo licenciado que contratou este software.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>0C14C57D-B0F3-586A-A457-BF7C1917A7D2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>38A31B22-EA8D-7841-EC59-9CE75AF2118C</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07454E03-DA6F-4F97-FD96-5690F323EE73" referredColumn="38A31B22-EA8D-7841-EC59-9CE75AF2118C"/>
+</associations>
+</Column>
+<Column name="useCustomSettings" id="4D8FF0BD-872E-C1C4-5572-2698EEB5981A">
+<createdBy>ES</createdBy>
+<createdTime>2014-06-07 02:33:12 UTC</createdTime>
+<commentInRDBMS>Indicates if the licensed use custom settings to localize the user interface. If this column is false the standard definitions of Idiom, Currency and TimeZone tables will be used.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Indica se o licendiado usa configurações personalizadas para localizar a interface do usuário. Se esta coluna for falsa, as definições padrões das tabelas Idiom, Currency e TimeZone serão usadas.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Licensed_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="dcFmtMinusSign" id="F7FADA13-610D-30FD-47E7-BEB28E86BFDF">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized minus sign used in the formating of decimal numbers.&lt;br/&gt;&lt;br/&gt;Sinal de menos personalizado utilizado na formatação de números decimais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>BF821FFF-13A8-1A8E-CD14-CA7F4EA0F4BD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dcFmtGroupingSeparator" id="0B0F4CCC-AFDD-ABAE-E0C1-AFE35A2E034D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized grouping separator used in the formating of decimal numbers.&lt;br/&gt;&lt;br/&gt;Separador de agrupamento personalizado utilizado na formatação de números decimais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>3F2854EB-8CC5-B199-5313-73ECCEACAA00</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dcFmtDecimalSeparator" id="F796A4F6-0F05-C224-3F72-54521F1CB065">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized decimal separator used in the formating of decimal number.&lt;br/&gt;&lt;br/&gt;Separador decimal personalizado utilizado na formatação de números decimais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>68EE72A4-1A4C-4576-0B25-BEE97776C7BC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dcFmtMinFractionDigits" id="20CFD686-2A25-40D9-88E5-375C8F6076D4">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized minimum amount of fractional digits used in the formating of decimal numbers.&lt;br/&gt;&lt;br/&gt;Quantidade mínima de dígitos fracionários personalizada usada na formatação de números decimais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>4B2B1021-4A26-7707-AAAC-4E84F5461446</importedID>
+<constraintName>Licensed_Chk_003</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="dcFmtMaxFractionDigits" id="C087050D-8300-C272-6E78-06C7FE30333E">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized maximum amount of fractional digits used in the formating of decimal numbers.&lt;br/&gt;&lt;br/&gt;Quantidade máxima de dígitos fracionários personalizada usada na formatação de números decimais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>BDBEDAFB-C006-7C36-B9E7-BF1C0A6001A3</importedID>
+<constraintName>Licensed_Chk_004</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="dcFmtMinIntegerDigits" id="B392CBDA-DF39-4B89-27BF-93CAA7EEAB59">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized minimum amount of integer digits used in the formating of decimal numbers.&lt;br/&gt;&lt;br/&gt;Quantidade mínima de dígitos inteiros personalizada utilizada na formatação de números decimais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>3E57E46A-7D72-1DCF-5B44-0DA7F93B1F92</importedID>
+<constraintName>Licensed_Chk_005</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="dcFmtMaxIntegerDigits" id="5D44F565-32E1-2915-1030-F2BC6E5ED2C8">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized maximum amount of integer digits used in the formating of decimal numbers.&lt;br/&gt;&lt;br/&gt;Quantidade máxima de dígitos inteiros personalizada usada na formatação de números decimais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>6F68157C-4C92-9E0F-31C0-4C2917335EB0</importedID>
+<constraintName>Licensed_Chk_006</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="dcFmtRoundMode" id="DA73925C-3CCD-71EC-26E8-16496457DFE9">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized round mode used in the formating of decimal numbers. Below are possible options:&lt;br/&gt;&lt;br/&gt;1 - UP - Rounding mode to round away from zero.&lt;br/&gt;2 - DOWN - Rounding mode to round towards zero.&lt;br/&gt;3 - CEILING - Rounding mode to round towards positive infinity.&lt;br/&gt;4 - FLOOR - Rounding mode to round towards negative infinity.&lt;br/&gt;5 - HALF_UP - Rounding mode to round towards &quot;nearest neighbor&quot; unless both neighbors are equidistant, in which case round up.&lt;br/&gt;6 - HALF_DOWN - Rounding mode to round towards &quot;nearest neighbor&quot; unless both neighbors are equidistant, in which case round down.&lt;br/&gt;7 - HALF_EVEN - Rounding mode to round towards the &quot;nearest neighbor&quot; unless both neighbors are equidistant, in which case, round towards the even neighbor.&lt;br/&gt;8 - UNNECESSARY - Rounding mode to assert that the requested operation has an exact result, hence no rounding is necessary.&lt;br/&gt;&lt;br/&gt;Modo de arredondamento personalizado usado na formatação de números decimais. Abaixo as possíveis opções.&lt;br/&gt;&lt;br/&gt;1 - UP - Modo de arredondamento para arredondar distante de zero.&lt;br/&gt;2 - DOWN - Modo de arredondamento para arredondar para zero.&lt;br/&gt;3 - CEILING - Modo de arredondamento para arredondar para um infinito positivo.&lt;br/&gt;4 - FLOOR - Mode de arredondamento para arrendondar para um infinno negativo.&lt;br/&gt;5 - HALF_UP - Modo de arredondamento para arredondar para o &quot;vizinho mais próximo&quot; a menos que ambos os vizinho sejam equidistantes, neste caso, arredonda para cima.&lt;br/&gt;6 - HALF_DOWN - Modo de arredondamento para arredondr para o &quot;vizinho mais próximo&quot; a menos que ambos os vizinhos sejam equiditantes. Nesse caso, arredonda para baixo.&lt;br/&gt;7 - HALF_EVEN - Modo de arredondamento para arredondar para o &quot;vizinho mais próximo&quot; a menos que ambos os vizinhos sejam equidistantes. Nesse caso, arredonda para um mesmo vizinho.&lt;br/&gt;8 - UNNECESSARY - Modo de arrdondamento para afirmar que a operação requisitada tem um resultado exato, portanto não é necessário arredondar.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>818A7958-089F-381D-D45B-B59F659F18A3</importedID>
+<constraintName>Licensed_Chk_007</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>64219E1D-1C00-4F32-C547-E9A2FFF75354</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="itFmtMinusSign" id="ED2265B6-F970-4E15-A421-199437E4987E">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized minus sign used in the formating of integer numbers.&lt;br/&gt;&lt;br/&gt;Sinal de menos personalizado utilizado na formatação de números inteiros.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>533A2926-4A68-0C8C-A0CC-CDB85D44C416</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="itFmtGroupingSeparator" id="59C6BF31-2FEF-8614-A1DC-E3997859E220">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized grouping separator used in the formating of integer number.&lt;br/&gt;&lt;br/&gt;Separador de agrupamento personalizado utilizado na formatação de números inteiros.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>159906B4-0696-E453-11A8-AB55D604EC14</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="itFmtMinIntegerDigits" id="EE39B314-143B-0922-12E8-9B272F431F8F">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized minimum amount of integer digits used in the formating of integer numbers.&lt;br/&gt;&lt;br/&gt;Quantidade mínima de dígitos inteiros personalizada utilizada na formatação de números inteiros.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>153F0E2C-3E1F-E004-07E9-EF87B0C9D035</importedID>
+<constraintName>Licensed_Chk_008</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="itFmtMaxIntegerDigits" id="776D30CA-C50A-EB92-D6A0-B7EB64C67C22">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized maximum amount of integer digits used in the formating of percent numbers.&lt;br/&gt;&lt;br/&gt;Quantidade máxima de dígitos inteiros personalizada utilizada na formatação de números inteiros.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>CAB0F77B-5D74-8AAE-4DCE-14CEF39A4673</importedID>
+<constraintName>Licensed_Chk_009</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="pcFmtMinusSign" id="E7BEC13C-7A80-C01B-315A-7C877FE7492F">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized minus sign used in the formating of percent numbers.&lt;br/&gt;&lt;br/&gt;Sinal de menos personalizado utilizado na formatação de números percentuais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>B1C4128D-5F42-341F-C004-37768DE11711</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pcFmtGroupingSeparator" id="EA1529B1-F752-E862-8E74-70BE14B3E8C0">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized grouping separator used in the formating of percent number.&lt;br/&gt;&lt;br/&gt;Separador de agrupamento personalizado utilizado na formatação de números percentuais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>67D19B5F-34D0-DB8A-1131-46E41E64BA2F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pcFmtDecimalSeparator" id="82ED5855-887F-3B5E-5EBA-B6709DADA51B">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized decimal separator used in the formating of percent number.&lt;br/&gt;&lt;br/&gt;Separador decimal personalizado utilizado na formatação de números percentuais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>D5E861AC-81B5-2985-507E-C4121D3AB0B6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pcFmtMinFractionDigits" id="35E4935F-26AF-E284-C52A-FF971D7D2C09">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized minimum amount of fractional digits used in the formating of percent numbers.&lt;br/&gt;&lt;br/&gt;Quatidade mínima de dígitos fracionários personaliada utilizada na formatação de números percentuais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>8CDB8AF3-13F4-C792-2F8C-AAF6A187BDA3</importedID>
+<constraintName>Licensed_Chk_010</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="pcFmtMaxFractionDigits" id="247B4985-453D-DC5F-C3BE-EBDC19986F15">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized maximum amount of fractional digits used in the formating of percent numbers.&lt;br/&gt;&lt;br/&gt;Quantidade máxima de dígitos fracionários utilizada na fomatação de números percentuais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>2CA5A2F7-74C0-3A84-C8EB-EC65F1D0C6A4</importedID>
+<constraintName>Licensed_Chk_011</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="pcFmtMinIntegerDigits" id="7AC1F04C-08F0-D665-10C0-952FE4EC0DC7">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized minimum amount of integer digits used in the formating of percent numbers.&lt;br/&gt;&lt;br/&gt;Quantidade máxima de dígitos inteiros personalizada utilizada na formatação de números percentuais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>887AAA00-E4BA-3808-C847-A82DF35B01BD</importedID>
+<constraintName>Licensed_Chk_012</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="pcFmtMaxIntegerDigits" id="02001660-3B09-FC5C-57FF-2F5F73BF789D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized maximum amount of integer digits used in the formating of percent numbers.&lt;br/&gt;&lt;br/&gt;Quantidade máxima de dígitos inteiros personalizada utilizada na formatação de números pecentuais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>137DA23B-B049-4D2D-282D-081AC8F9522F</importedID>
+<constraintName>Licensed_Chk_013</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="pcFmtRoundMode" id="22640ED6-2DBE-1054-A6D5-E97BD300C97C">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized round mode used in the formating of percent numbers. Below are possible options:&lt;br/&gt;&lt;br/&gt;1 - UP - Rounding mode to round away from zero.&lt;br/&gt;2 - DOWN - Rounding mode to round towards zero.&lt;br/&gt;3 - CEILING - Rounding mode to round towards positive infinity.&lt;br/&gt;4 - FLOOR - Rounding mode to round towards negative infinity.&lt;br/&gt;5 - HALF_UP - Rounding mode to round towards &quot;nearest neighbor&quot; unless both neighbors are equidistant, in which case round up.&lt;br/&gt;6 - HALF_DOWN - Rounding mode to round towards &quot;nearest neighbor&quot; unless both neighbors are equidistant, in which case round down.&lt;br/&gt;7 - HALF_EVEN - Rounding mode to round towards the &quot;nearest neighbor&quot; unless both neighbors are equidistant, in which case, round towards the even neighbor.&lt;br/&gt;8 - UNNECESSARY - Rounding mode to assert that the requested operation has an exact result, hence no rounding is necessary.&lt;br/&gt;&lt;br/&gt;Modo de arredondamenro personalizado utilizado na fomaração de números percentuais. Abaixo estão as possíveis opções:&lt;br/&gt;&lt;br/&gt;1 - UP - Modo de arredondamento para arredondar distante de zero.&lt;br/&gt;2 - DOWN - Modo de arredondamento para arredondar para zero.&lt;br/&gt;3 - CEILING - Modo de arredondamento para arredondar para um infinito positivo.&lt;br/&gt;4 - FLOOR - Modo de arredondamento para arredondar para um infinito negatico.&lt;br/&gt;5 - HALF_UP - Modo de arredondamento para arredondar para o &quot;vizinho mais próximo&quot; a menos que ambos os vizinhos sejam equidistantes. Nesse caso, arredondará para cima.&lt;br/&gt;6 - HALF_DOWN - Modo de arredonfamento para arredondar para o &quot;vizinho mais próximo&quot; a menos que ambos os vizinhos sejam equidistantes. Nesse caso, arredondará para baixo.&lt;br/&gt;7 - HALF_EVEN - Modo de arredondamento para arredondar para o &quot;vizinho mais próximo&quot; a menos que ambos os vizinhos sejam equidistantes. Neste caso, arrecondará para um vizinho comum.&lt;br/&gt;8 - UNNECESSARY - Modo de arredondamento para afirmar que a operação requisitada tem um resultado exato, portanto não é necessário arredondar.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>4BBFA706-180B-7EAE-C00B-11AACCCA457D</importedID>
+<constraintName>Licensed_Chk_014</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>64219E1D-1C00-4F32-C547-E9A2FFF75354</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pcFmtPercentSign" id="E93C6DCC-0132-2340-FEFC-F63E6B2E38C1">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized percent sign used in the formating of percent numbers.&lt;br/&gt;&lt;br/&gt;Sinal de porcentagem personalizado utilizado na formatação de números percentuais.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>363F55DE-F446-24B0-22BA-97AF58FF1CAE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dtFmtDateLongFormPattern" id="0F2A374C-E322-79B7-C769-EB31A5889F5A">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized pattern used in the formating of the long form of dates.&lt;br/&gt;&lt;br/&gt;Padrão de forma longa personalizado utilizado na formatação de datas.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>A9DC4893-572A-5089-1DF1-C76AAB54CE83</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<domain>2408E48D-B307-5B4A-5E19-0EA21515DF4B</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dtFmtDateShortFormPattern" id="18DC0510-3BE6-18BD-4611-06D1ACB7AE08">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized pattern used in the formating of the short form of dates.&lt;br/&gt;&lt;br/&gt;Padrão de forma curta personalizado utilizado na formatação de datas.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>F419F376-7F4D-4187-7361-3CA7F36758E1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<domain>6D8BF34F-04A3-4692-6668-7D3E7FFD12F2</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dtFmtTimeLongFormPattern" id="D1DB1F89-74D5-3ACB-6D86-3E113F43B556">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized pattern used in the formating of the long form of timetables.&lt;br/&gt;&lt;br/&gt;Padrão de forma longa personalizado utilizado na formatação de horários.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>A52D82A2-775C-4273-4EF7-1983C6095235</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<domain>9E0214DC-B3D4-D7D0-77B3-2F61C405E29E</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dtFmtTimeShortFormPattern" id="4EA9ABE0-7E8C-F318-E3C8-F33FF967119E">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Customized pattern used in the formating of the short form of timetables.&lt;br/&gt;&lt;br/&gt;Padrão de forma curta personalizado utilizado na formatação de horários.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>18A3C78B-FB18-D904-F4D8-9DD98381F693</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<domain>B1FDA45E-A117-B061-1EE1-740BE9542AC7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="legalEntityId" id="83299153-861A-5EA2-188D-0B5DB241B834">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Global legal entity of the licensed.&lt;br/&gt;&lt;br/&gt;Pessoa jurídica global do licenciado.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>D6BC91EA-CF2D-A91B-7E6A-032E988ABAA1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>087C3298-12C1-BECD-970E-B79AD1547E4A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C0C10E3-DDA6-A6C9-7BC7-D8480F43D93B" referredColumn="087C3298-12C1-BECD-970E-B79AD1547E4A"/>
+</associations>
+</Column>
+<Column name="implantationDate" id="5134A4C2-90F6-2477-AA8A-7FAC15A1EFCE">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Implantation date of this software.&lt;br/&gt;&lt;br/&gt;Data de implantação deste software.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>103FD14D-10FF-BE76-A7BC-130F5E7F512D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0C45F897-21BA-F2A8-78F1-03566DFCFEC6</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="limitDateOfUse" id="80D93A10-F370-0069-3862-3074F7CE525E">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Limit date of use of this software.&lt;br/&gt;&lt;br/&gt;Data limite do uso deste software.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>AEDD944D-AB21-BF0C-1B15-1E488B4FA848</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0C45F897-21BA-F2A8-78F1-03566DFCFEC6</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="useTabbedPublicPath" id="AD05F6C1-75CE-B6B8-3F72-724C86E83B01">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Tag that indicates if the licensed will seek its public paths in the PublicPath table to compose the addresses of the physical persons and legal entities.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o licençiado procurará seus logradouros na tabela PublicPath para compor os endereços das possoas físicas e jurídicas.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>D3EBCE5D-BB77-CD8E-3645-9C481009427A</importedID>
+<constraintName>Licensed_Chk_015</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="useTabbedDistrict" id="C05D1DCB-6968-9E8C-607A-1DC6ED6F522C">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the licensed will seek its districts in the District table, to compose the addresses of the physical persons and legal entities.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o licenciado procurará seus distritos na tabela District para compor os endereços das pessoas físicas e jurídicas.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>ADF7435F-916B-8986-6C66-94A453D969FF</importedID>
+<constraintName>Licensed_Chk_016</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="useTabbedZipcode" id="A7E336F2-3AB9-C12F-599C-9B8F37909CCD">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the licensed will seek the zipcodes of its public paths in the Zipcode table, to compose the addresses of the physical persons and legal entities.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Only will be possible make use of tabulated zipcodes if the columns useTabbedPublicPath and useTabbedDistrict are true.&lt;br/&gt;&lt;br/&gt;Sinal que indica se o licenciado procurará os CEPs de seus logradoutros na tabela Zipcode, para compor os endereços das pessoas físicas e jurídicas.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro&lt;br/&gt;&lt;br/&gt;Somente será possível fazer uso de CEPs tabelados se as colunas useTabbedPublicPath e useTabbedDistrict forem verdadeiras.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>E9F0815A-CB41-16BB-22BD-2CE83F8C67FE</importedID>
+<constraintName>Licensed_Chk_017</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="usesStrictlyTabbedZipcode" id="5BCBE2F5-6039-65D0-B8BA-5B9F8EAEBE60">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-02 13:50:27 UTC</createdTime>
+<commentInRDBMS>Flag that indicates that the Zipcode table should always be used. The user can not enter an address that does not exist in it.&lt;br/&gt;&lt;br/&gt;If useTabbedZipcode is false this column should be null.&lt;br/&gt;&lt;br/&gt;Sinal que indica que a tebela Zipcode deve sempre ser utilizada. O usuário não poderá informar um endereço que não exista nela.&lt;br/&gt;&lt;br/&gt;Se useTabbedZipcode for falso, esta coluna deve ser nula.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Licensed_Chk_018</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="useMultipleAddresses" id="683F68C0-3BA6-877B-0B58-E2ED6482DA3D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the licensed will use multiples addresses for each physical person or legal entity.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o licenciado utilizará multiplos endereços para cada pessoa física ou jurídica.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>4938367B-24AE-BC83-D234-9614C308A887</importedID>
+<constraintName>Licensed_Chk_019</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="useMultipleAddresses BETWEEN 0 AND 1"/>
+</checkConstraint>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="audited" id="4079FB6E-3BEA-D804-73E2-C9FB3EF1AF7D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the licensed is audited or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o licenciado é auditado ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>B6933E4C-E479-6933-2C1A-D9877429EDF3</importedID>
+<constraintName>Licensed_Chk_020</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="active" id="5C172C76-9B27-63AE-84F4-D1426186F5DF">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the licensed is active or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o licenciado está ativo ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>3F4C24A0-24D3-A078-E40E-8CD867F68D49</importedID>
+<constraintName>Licensed_Chk_021</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="deleted" id="80407230-7E36-0D41-E3D8-692F51ACFF6B">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the licensed is deleted or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o licenciado foi excluído ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>5D4B00A5-03FD-925E-E8A5-B0EA9133DA8D</importedID>
+<constraintName>Licensed_Chk_024</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F473843F-5C86-04A9-BD5D-39A7849EC437" name="Licensed_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>4B39AD17-B8BA-B7E3-5C83-E23F9A238953</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AC1631A-CE63-D3D7-4C5F-B37C3722511B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E23EE22-B4B1-E9D3-1E88-96C7F8279BA5" name="FK_Licensed_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7BC4838-BFEC-931C-89A0-E782C8C8835A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22A30F8C-C18F-7A6A-50DB-977E7C797F4E" name="FK_Licensed_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="921A94A0-B197-ED25-E8F5-D7E1F9C23AAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6131E42-E813-BC4A-674E-091977B89D88" name="FK_Licensed_003">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A45742E2-3CB8-8E69-63AF-B0A6DADA4E53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="654E5C90-6BA5-88AD-7892-820073152C1D" name="FK_Licensed_004">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83299153-861A-5EA2-188D-0B5DB241B834"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

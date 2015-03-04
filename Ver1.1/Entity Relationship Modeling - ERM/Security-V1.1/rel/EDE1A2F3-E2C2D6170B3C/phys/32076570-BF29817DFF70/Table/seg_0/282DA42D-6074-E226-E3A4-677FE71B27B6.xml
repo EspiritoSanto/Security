@@ -1,0 +1,263 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Profile" directorySegmentName="seg_0" id="282DA42D-6074-E226-E3A4-677FE71B27B6">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:25 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="deleted" id="0DE04918-2EA2-D69D-091C-46FB34C0AE0B">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dcFmtMaxFractionDigits" id="130CA6C4-EC3E-BCB8-11AE-056793D788C5">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dcFmtGroupingSeparator" id="19AB1220-14DE-4DDF-814E-6D6BC43976CA">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="itFmtMinIntegerDigits" id="1C4E6FCD-ACE6-FC3D-DC1A-613D39A9DFA2">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pcFmtMaxFractionDigits" id="2360C2CC-19E1-2833-2C8B-2D6A012A3403">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="idiomId" id="297EB9B2-5683-D464-67B4-6E98F92C6B1A">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dcFmtMinIntegerDigits" id="2C0BB4FA-CDB6-A436-14C8-0E1B0CEAA2A0">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="currencyId" id="3056255D-F637-45DD-08A0-3893E1F38B03">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="timeZoneId" id="355F12C9-2275-05D7-6F8C-5F8D1332314F">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="licensedId" id="38945B1D-2F53-3614-25BE-129BC17CA746">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dtFmtDateLongFormPattern" id="39DC4FF8-4DD9-0E7A-1795-E47A63195C03">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pcFmtDecimalSeparator" id="44ACAA94-DEC1-FDE4-619C-75B2A3C4E7BB">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="profile" id="4604783C-7E8A-CB1D-EC63-6039811413F2">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="4BD192B8-E182-0B91-E0D6-9A952038E5A5">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="audited" id="5AB21132-7606-1748-104C-842CDBDA3669">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pcFmtGroupingSeparator" id="5C1E3C69-AC3F-49BB-170B-4339CD091EA1">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pcFmtMinFractionDigits" id="63C29AF0-AB3F-9A3D-DDE4-AFE698E75AEB">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="subtype" id="6FD7CD67-00C1-FD82-A892-2329FE1282F7">
+<createdBy>ES</createdBy>
+<createdTime>2015-02-23 02:42:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="active" id="73013EB5-BC8D-E9D4-7148-B454ED3B9C10">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dcFmtDecimalSeparator" id="79B44D7D-3BF8-60A8-8751-50F6EC515320">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="itFmtMinusSign" id="8CEF1AE9-A832-6F74-6C01-5D6622CB5886">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dtFmtTimeLongFormPattern" id="9DE1B24C-4096-EAD4-FEAB-EC3C70C77460">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="itFmtMaxIntegerDigits" id="9E05DF6A-302F-8FBE-196C-DDA157D68076">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dcFmtMaxIntegerDigits" id="A54B166E-CDFE-FA1E-9153-5AAE0372F84C">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dcFmtMinFractionDigits" id="AB19613F-C1BF-5367-C845-B4270BFA18B6">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dtFmtTimeShortFormPattern" id="BA53E2F7-67C7-0F19-79E8-6224999A7816">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pcFmtPercentSign" id="C611F424-9675-0621-00E7-E0A5C66D142A">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dcFmtRoundMode" id="C767BBB5-AB23-13B3-4D0B-55B08A1A8112">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="useCustomSettings" id="D563989B-7E7E-9215-A279-D7B0137A70DA">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pcFmtRoundMode" id="E1317309-6C1F-AD16-FDB4-CB4B0938FDD1">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pcFmtMaxIntegerDigits" id="ECE57AE3-6D1E-8499-B393-DB29883FBFE2">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pcFmtMinusSign" id="EEEE1C1F-E8AF-13B8-9102-BC0664D09CA7">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pcFmtMinIntegerDigits" id="F60A6AB3-13C6-7903-6680-34173EDEF4BB">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dtFmtDateShortFormPattern" id="F7D93109-FB3D-A5E6-4484-EC3EB8BCAAEE">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dcFmtMinusSign" id="F8D26267-3041-5BF5-5999-25F797EC9583">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="itFmtGroupingSeparator" id="FD05D32E-A092-B7CB-B75D-3266964C1949">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_Profile_003" id="18684BE2-924C-C861-8FAF-52BEE9AEAC60">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_Profile_001" id="3CA3AA4B-60F6-6C8D-3763-D81AD9DB214B">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_Profile_004" id="92EE7FF8-F1F4-22B6-D5B0-1A0301CBA78D">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_Profile_002" id="BC5BB7B5-BFDA-2C42-9230-41F1C9B55F0E">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Profile_PK" id="95F1F993-8CD2-0F7C-7AD4-B93A14B85635">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

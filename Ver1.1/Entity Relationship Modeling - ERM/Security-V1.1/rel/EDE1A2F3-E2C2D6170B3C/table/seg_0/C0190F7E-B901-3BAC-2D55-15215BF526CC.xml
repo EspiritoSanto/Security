@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0190F7E-B901-3BAC-2D55-15215BF526CC" name="Permission">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>D89B32C3-CC93-C756-65A7-3537BEE467E9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="59B4D277-BE9B-7D52-2BE6-A23603A0C78B">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>A1D3156C-37D8-31D2-ADFE-1B7A9F22B205</importedID>
+<constraintName>Permission_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="moduleProfileId" id="3424CEAE-0258-5664-B66F-A61A39192C5D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Module profile to which this permission belongs to.&lt;br/&gt;&lt;br/&gt;Perfil do módulo para o qual esta permissão pertence.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>8EEBF395-0682-EC0D-6E2E-79B4DC930D76</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>F2B88373-902B-6E96-F322-6053BFB58EFB</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4CC58F73-22FA-335E-D089-CE743D90C388" referredColumn="F2B88373-902B-6E96-F322-6053BFB58EFB"/>
+</associations>
+</Column>
+<Column name="genericModuleEventId" id="7406AF76-39A8-0580-B2DE-A550B8ACD869">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Event of the generic module which access is allowed to the module profile in question.&lt;br/&gt;&lt;br/&gt;Evento do módulo genérico cujo acesso está permitido para o perfil do módulo em questão.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>E149CD13-3020-EEAA-D971-71ED90EAA99D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>945FA302-6FDA-779E-1788-956A4E452D54</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D4EBA1C-0817-8184-3AD8-D9C004A1C4CE" referredColumn="945FA302-6FDA-779E-1788-956A4E452D54"/>
+</associations>
+</Column>
+<Column name="subtype" id="CDAFE39A-CC45-FB55-7181-E02867FEEA0F">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-31 00:51:20 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the permission. The possible options are:&lt;br/&gt;&lt;br/&gt;G - Global permission&lt;br/&gt;L - Licensed&apos;s permission&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo da permissão. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;G - Permissão global&lt;br/&gt;L - Permissão de licensiado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Permission_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6686FE85-0855-8B63-D766-A6BD53E6AADC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="audited" id="30D31726-31B7-1636-F757-2791D932452D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the permission are being audited or not in the operation logging.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se a permissão está sento auditada ou não no registro de operações.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>16E279D2-D60F-08C5-6DAB-207E5824B1E2</importedID>
+<constraintName>Permission_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="active" id="107C8D23-F90B-1E58-BDC4-29BBAA56BCF9">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the permission is active or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se a permissão está ativa ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>CAD5C896-6667-E468-FA64-5E0984C821D0</importedID>
+<constraintName>Permission_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="deleted" id="6FC8F797-63B8-1CB0-BF68-CD55FE601A30">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the permission was deleted or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se a permissão foi excluída ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>7BA56235-AF3D-78FE-0D54-C5829B1C50CB</importedID>
+<constraintName>Permission_Chk_005</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EA5991E5-2D55-9FAE-C299-445914EB2689" name="Permission_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>6903A920-46D6-3D9A-A2B9-E45C93118D52</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59B4D277-BE9B-7D52-2BE6-A23603A0C78B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6CCC981D-414B-DA98-AEF0-C96C74427429" name="FK_Permission_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3424CEAE-0258-5664-B66F-A61A39192C5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A59CFC48-7A82-0074-E95F-9292CA0EC9AB" name="FK_Permission_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7406AF76-39A8-0580-B2DE-A550B8ACD869"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

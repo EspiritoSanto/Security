@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_23" directorySegmentName="seg_0" id="CB0A494A-9714-9F11-9360-89360E4FDC93">
+<createdBy>ES</createdBy>
+<createdTime>2014-09-12 12:09:19 UTC</createdTime>
+<comment>All generic modules must have a respective module that is not related to any licensed, they will to be related to global users of the GN1.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</Note>

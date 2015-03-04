@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_9" directorySegmentName="seg_0" id="CCE595E7-8A47-B92D-5DB1-E4994B86A515">
+<createdBy>ES</createdBy>
+<createdTime>2014-09-12 12:09:19 UTC</createdTime>
+<comment>The currency quotations in american dollar and euro will are daily registered by GN1. This quotations will be global and will not be related to any licensed. The user will can not delete or change these quotations. Other currency quotations will can be registered by licensed interested.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</Note>

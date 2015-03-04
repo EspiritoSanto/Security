@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Event" directorySegmentName="seg_0" id="DBC581CE-200D-1D65-9AB5-CDB14D65220F">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="routineId" id="25FE808D-A53D-BA2E-6A1C-6E04AADACC1F">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="eventAlias" id="2A3A8764-FAFC-E10E-DF53-657D00BB0056">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="audited" id="3D572A02-A272-90E9-CFF4-8D517A1B02B9">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="eventType" id="4A97822D-21C9-A9EE-7B48-CB4FB085B962">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="759D735A-343A-BDF6-FAB3-82CC36551210">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="active" id="A0E3EC6A-1EC5-E8F5-3F70-C447CBD7383C">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="event" id="B410D2C1-FF7D-D4DE-4C6C-DA4091CE6914">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_Event_001" id="2F432390-0A3C-573E-2E17-C1D6DF6890D8">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Event_PK" id="5FA12E8E-4884-E4C5-DEC9-248D8F0EE373">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

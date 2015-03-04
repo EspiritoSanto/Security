@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6DF29214-59EC-0355-6A87-7432D2DC1BF2" name="District">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>ED046574-C573-1054-6ED6-A73F5DA7D751</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="F6409C37-2AD8-7764-F1C1-CF0F89E54BBB">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registo nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>7A92160B-19E8-2ABB-0C23-9FCFC5F660DD</importedID>
+<constraintName>District_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="licensedId" id="1E2B0DF9-D5B8-6B30-28A8-79DAD180C03D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Licensed to which this district belongs to.&lt;br/&gt;&lt;br/&gt;Licenciado para o qual este bairro pertence.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>1A42AA83-DD01-5736-4135-567351DEAD42</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>9AC1631A-CE63-D3D7-4C5F-B37C3722511B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B53A384-B844-1837-6E1D-0E9AB7C545C3" referredColumn="9AC1631A-CE63-D3D7-4C5F-B37C3722511B"/>
+</associations>
+</Column>
+<Column name="district" id="46700606-8D23-20A3-6600-967B7B60F38A">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<comment>&lt;br/&gt;</comment>
+<commentInRDBMS>Denomination of the district to be displayed in the user interface. The idiom used is the one configured in Licensed table. Can be localized into other idioms.&lt;br/&gt;&lt;br/&gt;Denominação do bairro a ser exibido na interface do usuário. O idioma usado é aquele configurado na tabela Licensed. Pode ser localizado em outros idiomas.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>376F497F-15B5-A9D8-3FDC-3BD804F3A558</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4D9DAAC4-D719-709B-B85E-ED333A54C997</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="admDivisionId" id="63A63166-0A00-7745-68E1-8A7E8A2FE458">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<comment>Administrative division where is located this district.</comment>
+<commentInRDBMS>Administrative division to which this district belongs to.&lt;br/&gt;&lt;br/&gt;Divisão administrativa para a qual este bairro pertence.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>58E614D8-013D-537B-15EE-15113B8B50FF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>619AD03D-56B1-AB0B-FFFD-8A912B5B673A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70227F43-A32E-8794-DEEA-CFC070FE3DB1" referredColumn="619AD03D-56B1-AB0B-FFFD-8A912B5B673A"/>
+</associations>
+</Column>
+<Column name="active" id="164D9E55-C362-FF2A-FF43-C0757A857125">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the district is active or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o bairro está ativo ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>215C9329-1B6C-9B9B-4391-5484A26B53FD</importedID>
+<constraintName>District_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="deleted" id="4E90DABF-64CB-A739-216C-663981B80D1C">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the district was deleted or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o bairro foi excluído ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>D0814FB0-DA21-3BCD-4600-2336124F72F7</importedID>
+<constraintName>District_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="458CE87F-9DE5-7B46-51B0-8A99768D1BCE" name="District_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>42C158E8-2592-4966-7C67-23131331E319</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6409C37-2AD8-7764-F1C1-CF0F89E54BBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0900DF1C-EAA4-9B88-B705-CBE4132D0F86" name="FK_District_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E2B0DF9-D5B8-6B30-28A8-79DAD180C03D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="898FC2E8-F22E-6AFE-0E21-8660DCB02939" name="FK_District_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63A63166-0A00-7745-68E1-8A7E8A2FE458"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

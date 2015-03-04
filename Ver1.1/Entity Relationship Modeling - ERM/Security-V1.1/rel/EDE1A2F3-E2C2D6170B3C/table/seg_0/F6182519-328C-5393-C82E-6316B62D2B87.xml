@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6182519-328C-5393-C82E-6316B62D2B87" name="BRMunicipality">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 11:40:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>ABD327C3-856C-775E-F353-882BB968C7C1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="05271CF7-05F4-3DC2-FDC0-8C7CBF125C66">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 11:40:42 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table. Inherited of the AdmDivision table.&lt;br/&gt;&lt;br/&gt;Númeiro que identifica um registro nesta tabela. Herdado da tabela AdmDivision.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>A0057683-2507-9F4D-BF3E-4096B6BF8A6B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>619AD03D-56B1-AB0B-FFFD-8A912B5B673A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDE04390-9F3E-A638-A025-A316FFFFD4A4" referredColumn="619AD03D-56B1-AB0B-FFFD-8A912B5B673A"/>
+</associations>
+</Column>
+<Column name="brFederalUnitId" id="C0B5BB5A-3BDE-B6AE-635B-6AB8923F21D9">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 05:02:18 UTC</createdTime>
+<commentInRDBMS>Brazilian federal unit (higher administrative division) that contains this brazilian municipality (administrative division).&lt;br/&gt;&lt;br/&gt;Unidade federativa brasileira (Divisão administrativa superior) que contém este município brasileiro (divisão administrativa).</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>618A5544-1372-036D-072A-25B5F92D7A47</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D8603BA-7527-994E-E840-8BF3DF263BCD" referredColumn="618A5544-1372-036D-072A-25B5F92D7A47"/>
+</associations>
+</Column>
+<Column name="generalZipcode" id="1499A7E2-ADC8-6061-CC3A-36A9F0B66226">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 11:40:42 UTC</createdTime>
+<commentInRDBMS>Postcode of the 5-digit number used to uniquely identify the brazilian municipalities. Some brazilian municipalities are very large and have more than a general zipcode. In this case, this column is left null.&lt;br/&gt;&lt;br/&gt;CEP de 5 dígitos numéricos usado para identificar o município brasileiro. Alguns municípios brasileiros são muito grandes e possuem mais de um CEP geral. Nesse caso, esta coluna é deixada  nula.&lt;br/&gt;</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>9BE329E6-255E-746D-CBB6-57057E6B5773</importedID>
+<constraintName>BRMunicipality_Chk_001</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<domain>74408F8B-0C47-E9A0-E37B-9BB5A38C2A84</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2829E132-214E-7ADC-BEC2-06D3B6E17682" name="BRMunicipality_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 11:40:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>0D4933CD-7EBB-8512-4159-58DFDD0CF8C4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05271CF7-05F4-3DC2-FDC0-8C7CBF125C66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4AC8F99-479F-4B03-60DA-0FA588E29979" name="FK_BRMunicipality_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 11:40:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05271CF7-05F4-3DC2-FDC0-8C7CBF125C66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43AC1639-1EEA-4636-C335-339F8E66AE88" name="FK_BRMunicipality_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 05:03:50 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0B5BB5A-3BDE-B6AE-635B-6AB8923F21D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

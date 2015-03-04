@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C733F9B-0F00-3CD1-C14C-FEF528CE685F" name="Module">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>ACEA97E7-B15C-E75B-643A-AD3B2E2ECC2D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="CE3A3372-A292-75E9-B46A-478CDD5AC98F">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>6570564F-D6A2-F8F6-5DB8-BD375F61C8ED</importedID>
+<constraintName>Module_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="genericModuleId" id="461BA448-0107-8B99-5610-6D23D4B9CC6B">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Generic module which this module represents in the city hall to which it is attached. </commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>C9EB774C-18F2-C9BA-0112-4804983763B2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>4FE2BB2B-68E2-2205-53F1-F4B18E1F98F3</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8DCA1CC6-77B1-56DF-DC61-84E52C0BC9AB" referredColumn="4FE2BB2B-68E2-2205-53F1-F4B18E1F98F3"/>
+</associations>
+</Column>
+<Column name="subtype" id="1EB035C8-F6C7-3D73-C98B-9A73B4D137C4">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-31 00:36:18 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the module. The possible options are:&lt;br/&gt;&lt;br/&gt;G - Global module&lt;br/&gt;L - Licensed&apos;s module&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo do módulo. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;G - Módulo global&lt;br/&gt;L - Módulo de licensiado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Module_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6686FE85-0855-8B63-D766-A6BD53E6AADC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="licensedId" id="E780C626-977A-ADFC-2A0E-FD32B5D914DD">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Licensed to which this module is attached and available.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>B19DFB7B-1FC8-4BB5-F0B9-6B4E3480A32E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>9AC1631A-CE63-D3D7-4C5F-B37C3722511B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5019D5EC-C9CB-ABC7-CAE2-D03C2A27AA2C" referredColumn="9AC1631A-CE63-D3D7-4C5F-B37C3722511B"/>
+</associations>
+</Column>
+<Column name="audited" id="54232C25-8FF4-2098-FC40-011159C951A4">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the module are being audited or not in the operation logging.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>6CA030FB-35C9-B3A0-8F6A-654D79635CEA</importedID>
+<constraintName>Module_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="active" id="DDC68B99-0FDC-4F1F-DB18-26492ECDD167">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the module is active or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>802298E3-76F7-2A71-4A01-E4C0D3A8D363</importedID>
+<constraintName>Module_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="deleted" id="CF58B981-D760-4510-6364-7D6B74B2D1CC">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the module is deleted or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>108B3164-8C42-AB96-6F52-A0C333D52A05</importedID>
+<constraintName>Module_Chk_005</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E23B65A-1DEF-224B-1081-27A489F50EF5" name="Module_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>DF652406-E083-4B2D-D7EA-55F2345AAB55</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE3A3372-A292-75E9-B46A-478CDD5AC98F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="175407F1-2E46-432A-FAF4-451B2E1A8101" name="FK_Module_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="461BA448-0107-8B99-5610-6D23D4B9CC6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E70086F1-396A-F0FB-F16B-6602207AB76A" name="FK_Module_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E780C626-977A-ADFC-2A0E-FD32B5D914DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Module" directorySegmentName="seg_0" id="3C733F9B-0F00-3CD1-C14C-FEF528CE685F">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="subtype" id="1EB035C8-F6C7-3D73-C98B-9A73B4D137C4">
+<createdBy>ES</createdBy>
+<createdTime>2015-02-23 02:42:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="genericModuleId" id="461BA448-0107-8B99-5610-6D23D4B9CC6B">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="audited" id="54232C25-8FF4-2098-FC40-011159C951A4">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="CE3A3372-A292-75E9-B46A-478CDD5AC98F">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="deleted" id="CF58B981-D760-4510-6364-7D6B74B2D1CC">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="active" id="DDC68B99-0FDC-4F1F-DB18-26492ECDD167">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="licensedId" id="E780C626-977A-ADFC-2A0E-FD32B5D914DD">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_Module_001" id="175407F1-2E46-432A-FAF4-451B2E1A8101">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_Module_002" id="E70086F1-396A-F0FB-F16B-6602207AB76A">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Module_PK" id="6E23B65A-1DEF-224B-1081-27A489F50EF5">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

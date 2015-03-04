@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="BRAdmRegion" directorySegmentName="seg_0" id="B56EBC27-4CF4-3ED4-60EF-A1056AB8A3CC">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id" id="10F0F17D-DFB1-2EE5-F95E-0192E9BEC78C">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="generalZipcode" id="C0DFDFF4-C9B4-35B0-C820-4669A5AC5DBF">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="brFederalUnitId" id="C657B2BC-EF13-C823-6BD7-DC92E16ED121">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_BRAdmRegion_002" id="C3A67F0A-C3CE-4C58-C8B8-2763C4724386">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_BRAdmRegion_001" id="E1515E21-B820-F8C8-29F8-F27EBB26CDB1">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BRAdmRegion_PK" id="93FAC52D-8EB0-C9C4-6A92-E53B3D08F63B">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-24 08:43:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

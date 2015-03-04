@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3DF4A37-2751-9E41-4E68-E7D605699850" name="Office">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>BF2B933D-15B2-E19F-D8DC-A03D16768474</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FF484689-DD47-8484-3B1C-5C0472207475">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>5803CEBC-8244-41D4-B3BF-FAA2BA7A53D5</importedID>
+<constraintName>Office_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="office" id="1002B90F-53B8-C73F-A4C4-832E80B85C9E">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Denomination of the office to be displayed in the user interface. The idiom used is the one configured in Licensed table. Can be localized into other idioms.&lt;br/&gt;&lt;br/&gt;Denominação da função a ser exibida na interface do usuário. O idioma usado é aquele configurado na tabela Licensed. Pode ser localizado em outros idiomas.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>C5C9626A-CA42-63A5-9C11-908B58AA0558</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4D9DAAC4-D719-709B-B85E-ED333A54C997</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtype" id="A8804CD0-B0A3-F9B2-B51F-41FDFAE1AF80">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-29 11:38:20 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the office. The possible options are:&lt;br/&gt;&lt;br/&gt;G - Global office&lt;br/&gt;L - Licensed&apos;s office&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo do cargo. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;G - Cargo global&lt;br/&gt;L - Cargo de licensiado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Office_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6686FE85-0855-8B63-D766-A6BD53E6AADC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="licensedId" id="89D70E80-99EC-3EF8-6E10-F53C985FF063">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Licensed to which this office belongs.&lt;br/&gt;&lt;br/&gt;Licenciado a quem esta função pertence.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>B8662163-3B6A-E7CB-C1BB-0913511B32AD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>9AC1631A-CE63-D3D7-4C5F-B37C3722511B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3ED3948B-D855-691E-9646-22A2B0BADC44" referredColumn="9AC1631A-CE63-D3D7-4C5F-B37C3722511B"/>
+</associations>
+</Column>
+<Column name="active" id="B756CD97-8059-7F09-E386-4974CCB70ACA">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the office is active or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o escritório está ativo ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>02CCA176-8086-52C9-5106-E41F5A24BB3D</importedID>
+<constraintName>Office_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="deleted" id="93E6F462-DDEC-A3F5-0C00-90FD762D3ACC">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the office was deleted or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o escritório foi excluído ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>F472067C-92BC-D27C-B0A7-8AFE123B659E</importedID>
+<constraintName>Office_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B48863E3-12EC-94AB-128C-15E3FCCF2A92" name="Office_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>840ACE80-924F-3733-79F7-B338C47B4C2F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF484689-DD47-8484-3B1C-5C0472207475"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16986E71-27D9-A7CA-B778-A5765B000B85" name="FK_Office_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89D70E80-99EC-3EF8-6E10-F53C985FF063"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

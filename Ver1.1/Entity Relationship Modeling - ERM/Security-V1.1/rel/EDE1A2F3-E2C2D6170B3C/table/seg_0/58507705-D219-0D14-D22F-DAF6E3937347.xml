@@ -1,0 +1,206 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58507705-D219-0D14-D22F-DAF6E3937347" name="Zipcode">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>8B51FC2D-BBDC-2A80-5E2F-EBDA12E6AE7E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="36D5527A-63E4-D891-732F-4F1E14086BCD">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>4A538D35-E4D7-16F5-BB35-6DDD664FD727</importedID>
+<constraintName>Zipcode_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="licensedId" id="B2431BB9-0AE6-2592-0380-648875B85E0E">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Licensed to which this zipcode belongs to.&lt;br/&gt;&lt;br/&gt;Licenciado para o qual pertence este CEP.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>5D7C03EA-FC69-B927-B1BC-A4821C58873E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>9AC1631A-CE63-D3D7-4C5F-B37C3722511B</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA44CC9D-0D92-C06C-9E7B-BCB0734A35E8" referredColumn="9AC1631A-CE63-D3D7-4C5F-B37C3722511B"/>
+</associations>
+</Column>
+<Column name="zipcode" id="3CEBAEAC-AE62-64E5-FE0F-4B4A33F81765">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>A valid zipcode within of the administrative division in question.&lt;br/&gt;&lt;br/&gt;Um CEP válido dentro da divisão administrativa em questão.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>11AB136F-0900-9A4F-6605-4BE44F7D9DD9</importedID>
+<constraintName>Zipcode_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<domain>AAA7BE72-47A4-7D1B-8CA7-68C991224046</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="publicPathId" id="C5FF8AA7-3399-864F-2491-56CE9C1E0CCF">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Public path to which this zipcode belongs to.&lt;br/&gt;&lt;br/&gt;Logradouro para o qual este CEP pertence.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>495CA798-E53E-E5F5-A0BF-4E20FD08466F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>6942B3E2-1A00-A3D2-F29A-C88A5E0E2234</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="243D55F3-72C3-6F8F-FCB2-00ABD7ADEC38" referredColumn="6942B3E2-1A00-A3D2-F29A-C88A5E0E2234"/>
+</associations>
+</Column>
+<Column name="districtId" id="39614CBD-681B-571E-79D9-E24EE82291A8">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>District to which this zipcode belongs to.&lt;br/&gt;&lt;br/&gt;Distrito para o qual este CEP pertence.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>E4B788B7-5116-25E8-2B99-995ECD82D6BA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>F6409C37-2AD8-7764-F1C1-CF0F89E54BBB</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AEECCDDD-6FE0-3041-CF81-D639FF9761F9" referredColumn="F6409C37-2AD8-7764-F1C1-CF0F89E54BBB"/>
+</associations>
+</Column>
+<Column name="observation" id="B233A04F-28BC-13C7-D72F-CE6008EDDFC9">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Adcional information about the public path in question.&lt;br/&gt;&lt;br/&gt;Informação adicional sobre o logradouro em questão.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>CAA9825F-97AA-F46D-5C09-ABAEBE39F0C7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<domain>021E3288-E25C-B310-9387-F0605B26F672</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="78F46B12-D0A8-130E-54B9-4BDB045977B3">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the zipcode is active or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o CEP está ativo ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>83841494-8E08-E251-EBE9-D4EA3FFF132F</importedID>
+<constraintName>Zipcode_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="deleted" id="C1517FDB-9F84-2BB0-C2FB-83D6ABF5D801">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the zipcode was deleted or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o CEP foi excluído ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>B0EEA4E2-D5DE-0A62-F126-518316ADC62A</importedID>
+<constraintName>Zipcode_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26124C78-B774-7799-EB87-BBC48373DDEC" name="Zipcode_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>EA7B4ADA-9AF3-96E1-F08C-26DE81CEB1F7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36D5527A-63E4-D891-732F-4F1E14086BCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AFB87EA-9128-F4B2-36F2-50AC71E5A642" name="FK_Zipcode_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2431BB9-0AE6-2592-0380-648875B85E0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2E4C934-C269-898E-C9D4-6A7154E4C315" name="FK_Zipcode_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5FF8AA7-3399-864F-2491-56CE9C1E0CCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C23D07B3-61D1-D0E3-57AC-4FB3CE0A83DC" name="FK_Zipcode_003">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39614CBD-681B-571E-79D9-E24EE82291A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

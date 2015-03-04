@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_11" directorySegmentName="seg_0" id="9175DEBA-F6CE-2699-CC71-4A5C63D432B4">
+<createdBy>ES</createdBy>
+<createdTime>2014-09-12 12:09:19 UTC</createdTime>
+<comment>It is important to note that Licensed, Profile and ModuleProfile tables are not showing all its columns and foreign keys. They have been suppressed to de-pollute this vision.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</Note>

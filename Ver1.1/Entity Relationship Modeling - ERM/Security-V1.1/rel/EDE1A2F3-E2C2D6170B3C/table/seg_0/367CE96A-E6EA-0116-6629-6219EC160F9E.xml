@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="367CE96A-E6EA-0116-6629-6219EC160F9E" name="Node">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>0F0299FE-5309-BD82-15D8-F289577A3B83</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="2A164D3F-C6FB-1C22-7CEC-8E05FA403C0D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>32087352-7A4F-29F4-39F0-74D3308304E7</importedID>
+<constraintName>Node_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="node" id="8E8BA92E-B239-1A2A-0FA8-AB5A75BBCD15">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Denomination of the event to be displayed in the user interface. The idiom used is the one configured in Licensed table. Can be localized into other idioms.&lt;br/&gt;&lt;br/&gt;Denominação do evento a ser exibido na inerface do usuário. O idioma utilizado é aquele configurado na tabela Licensed. Pode ser localizado em outros idiomas.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>6EF6E678-7674-925B-2910-DB320333FFAC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4D9DAAC4-D719-709B-B85E-ED333A54C997</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nodeAlias" id="025EC92F-CE2D-7FFC-739D-335E4BC82512">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Denomination of the node to use in the source code.&lt;br/&gt;&lt;br/&gt;Denominação do nó usado para uso no código-fonte.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>DB8010BB-889D-06B2-8D6E-783BE6BD1A40</importedID>
+<constraintName>Node_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>06318574-A259-C8B8-2633-10168EDC1FF3</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nodeAboveId" id="37BEBCAC-C561-74ED-729D-0C2037AEE7C6">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Higher node that contains this node or null when the node is in the top of the tree.&lt;br/&gt;&lt;br/&gt;Nó superior que contém este nó ou nulo quando o nó está no topo da árvore.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>54A80C18-790E-2FDF-5EED-F723B7343B0F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>2A164D3F-C6FB-1C22-7CEC-8E05FA403C0D</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2E16D8A-93F9-3F65-6E0D-F8CF85DDDED9" referredColumn="2A164D3F-C6FB-1C22-7CEC-8E05FA403C0D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06A29FB5-8917-A122-C99E-73626A0CA920" name="Node_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>53EC5D80-C609-F5C2-38D8-06BB5003A416</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A164D3F-C6FB-1C22-7CEC-8E05FA403C0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44EA96F0-D581-9C13-E2D9-8D38F6CD3C26" name="FK_Node_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37BEBCAC-C561-74ED-729D-0C2037AEE7C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

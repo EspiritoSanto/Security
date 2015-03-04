@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="469B0117-FD00-9236-DA86-50CC2B560827" name="Bookmark">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-01 01:02:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="62D7CA7E-485D-348F-436A-75F37B3E5982">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-01 01:03:33 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Bookmark_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="programUserId" id="C0F0F7F5-2004-6433-EFE0-BE860FE96D22">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-01 01:13:05 UTC</createdTime>
+<commentInRDBMS>User for whom this record belongs to.&lt;br/&gt;&lt;br/&gt;Usuário para o qual esse registro pertence.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>A7C0BB8A-1594-93C5-98C8-E5445CB3A241</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="25F0A403-C5F6-61EF-9840-27B595BC75F6" referredColumn="A7C0BB8A-1594-93C5-98C8-E5445CB3A241"/>
+</associations>
+</Column>
+<Column name="genericModuleEventId" id="3C6613FE-E9F6-3E35-0C9B-7B5F9F878084">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-01 01:13:23 UTC</createdTime>
+<commentInRDBMS>Record of binding (GenericModule-Event) bookmarked by user in question.&lt;br/&gt;&lt;br/&gt;Registro de ligação (GenericModule-Event) marcado como favorito pelo usuário em questão.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>945FA302-6FDA-779E-1788-956A4E452D54</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="3A9585D3-A782-DE5A-46D7-EFDB5A7ABC7B" referredColumn="945FA302-6FDA-779E-1788-956A4E452D54"/>
+</associations>
+</Column>
+<Column name="subtype" id="9EA973C3-1CA9-F82E-C0B4-AD3726EB9FE9">
+<createdBy>ES</createdBy>
+<createdTime>2014-11-02 21:38:52 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the bookmark. The possible options are:&lt;br/&gt;&lt;br/&gt;G - Global bookmark&lt;br/&gt;L - Licensed&apos;s bookmark&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo do favorito. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;G - Favorito global&lt;br/&gt;L - Favorito de licensiado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Bookmark_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6686FE85-0855-8B63-D766-A6BD53E6AADC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="deleted" id="DC84A212-3E4B-9739-3066-F74E22300EA8">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-01 01:03:33 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the bookmark is deleted or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o favorito está excluído ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Bookmark_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F79F15B-ED8D-DB30-320D-6D101245700B" name="Bookmark_PK">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-01 01:03:33 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62D7CA7E-485D-348F-436A-75F37B3E5982"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B362D01C-777E-EED7-4711-DA2DF690557E" name="FK_Bookmark_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-01 01:13:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0F0F7F5-2004-6433-EFE0-BE860FE96D22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC0B817A-6877-EA84-A156-4BF57AE04C58" name="FK_Bookmark_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-01 01:13:23 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C6613FE-E9F6-3E35-0C9B-7B5F9F878084"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

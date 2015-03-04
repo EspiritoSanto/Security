@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_3" directorySegmentName="seg_0" id="DBE86C98-770A-7175-786B-894D7935E15B">
+<createdBy>ES</createdBy>
+<createdTime>2014-09-12 12:09:19 UTC</createdTime>
+<comment>The user will can inserting records in this table, but can not will updating or deleting the records created by System in the implantation.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</Note>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="70A68AA1-29B1-4092-8BCE-C9CBD9F5EEA0" name="Security-V1.1" visible="false"/>
+   <object objectType="sub_view" objectID="1B4E3923-5008-B9B5-4A92-6734443D6522" name="Security-V1.1-00-Infrastructure" visible="true"/>
+   <object objectType="sub_view" objectID="FCC5A2DD-7B34-B82E-7C2F-5CCCA2D2AC39" name="Security-V1.1-01-Brazilian Administrative Division" visible="true"/>
+   <object objectType="sub_view" objectID="5C23DEF6-41E1-0CA2-93F5-D8F3AD6A4897" name="Security-V1.1-02-Currency Quotation" visible="true"/>
+   <object objectType="sub_view" objectID="50C32961-1E4D-F6F2-330E-8973A52775C9" name="Security-V1.1-03-Licensed" visible="true"/>
+   <object objectType="sub_view" objectID="24D14AEF-2389-5348-B845-44CAF4E1E076" name="Security-V1.1-04-Translation" visible="true"/>
+   <object objectType="sub_view" objectID="AB66A8D0-A6D7-49F6-F0A6-BEF27D6C9CFD" name="Security-V1.1-05-Zipcode" visible="true"/>
+   <object objectType="sub_view" objectID="8299C1C0-7B4C-CD8F-C2C4-2257AEE78492" name="Security-V1.1-06-Person" visible="true"/>
+   <object objectType="sub_view" objectID="8522AE70-DE7F-E470-2502-A96EB7708995" name="Security-V1.1-07-Brazilian Person" visible="true"/>
+   <object objectType="sub_view" objectID="B16EA526-3E9C-E0BE-1995-CD7FFDCE6BF5" name="Security-V1.1-08-Permission" visible="false"/>
+   <object objectType="sub_view" objectID="D78F7ECB-44A2-140E-3A11-BA79B51C64C2" name="Security-V1.1-09-User" visible="false"/>
+   <object objectType="sub_view" objectID="035416E1-B420-9055-E046-45506F8DCA63" name="Security-V1.1-10-Bookmark" visible="false"/>
+   <object objectType="sub_view" objectID="FD655A00-34BA-0639-3B1F-7EEB159C99FF" name="Security-V1.1-11-Logging" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

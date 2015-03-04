@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>
+   <object objectType="User" objectID="MDSYS" name="MDSYS" seqName="seg_0"/>
+   <object objectType="User" objectID="PUBLIC" name="PUBLIC" seqName="seg_0"/>
+   <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0"/>
+   <object objectType="SType" objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" name="XMLTYPE" seqName="seg_0"/>
+   <object objectType="Table" objectID="0962D1AB-DB41-A322-D1EB-C62A088AE86F" name="AdmDivision" seqName="seg_0"/>
+   <object objectType="Table" objectID="13F9DF82-19E7-A579-2213-05312416AE00" name="ModuleProfile" seqName="seg_0"/>
+   <object objectType="Table" objectID="163AF8F0-304E-9F30-1F99-85844BCD7F7C" name="BRLegalEntity" seqName="seg_0"/>
+   <object objectType="Table" objectID="1656EEBB-1911-BC92-A8D4-2DFC3447EEC7" name="ModuleProfileUser" seqName="seg_0"/>
+   <object objectType="Table" objectID="1D17A112-6E2A-707B-6C61-3E713502E95B" name="CurrencyQuotation" seqName="seg_0"/>
+   <object objectType="Table" objectID="1D65748A-4FB1-A196-A25A-70E38D3C203F" name="SequenceGenerator" seqName="seg_0"/>
+   <object objectType="Table" objectID="282DA42D-6074-E226-E3A4-677FE71B27B6" name="Profile" seqName="seg_0"/>
+   <object objectType="Table" objectID="287ACCE7-FD0E-9836-3137-25FE4D7C1089" name="PhysicalPerson" seqName="seg_0"/>
+   <object objectType="Table" objectID="2ACF0BB0-0EF6-6D13-6051-A5925B838FAF" name="Idiom" seqName="seg_0"/>
+   <object objectType="Table" objectID="367CE96A-E6EA-0116-6629-6219EC160F9E" name="Node" seqName="seg_0"/>
+   <object objectType="Table" objectID="3C733F9B-0F00-3CD1-C14C-FEF528CE685F" name="Module" seqName="seg_0"/>
+   <object objectType="Table" objectID="469B0117-FD00-9236-DA86-50CC2B560827" name="Bookmark" seqName="seg_0"/>
+   <object objectType="Table" objectID="477B0604-794F-0601-32F4-A377E362C1AD" name="Licensed" seqName="seg_0"/>
+   <object objectType="Table" objectID="4C278C2B-BCFA-E0F1-D7C1-902B55566A81" name="LicensedImage" seqName="seg_0"/>
+   <object objectType="Table" objectID="539D9289-D8B9-46A6-B0C3-D546F536C2DE" name="Address" seqName="seg_0"/>
+   <object objectType="Table" objectID="53EB8C27-A943-D690-5B03-342F1497C67F" name="BRMunicipalDistrict" seqName="seg_0"/>
+   <object objectType="Table" objectID="550F299D-0D6E-EB70-E754-E609D0169C30" name="Collaborator" seqName="seg_0"/>
+   <object objectType="Table" objectID="569B5D5A-7DD5-BFD4-80F3-3E974F846189" name="Currency" seqName="seg_0"/>
+   <object objectType="Table" objectID="58507705-D219-0D14-D22F-DAF6E3937347" name="Zipcode" seqName="seg_0"/>
+   <object objectType="Table" objectID="689A6032-4A50-7067-A673-3125FA73542B" name="GenericModuleEvent" seqName="seg_0"/>
+   <object objectType="Table" objectID="6DF29214-59EC-0355-6A87-7432D2DC1BF2" name="District" seqName="seg_0"/>
+   <object objectType="Table" objectID="741EBC35-D791-ADF4-BD12-7FC074930DAB" name="PublicPath" seqName="seg_0"/>
+   <object objectType="Table" objectID="7BBFDC2D-1DE5-CB04-E511-998E6A1D4C9E" name="AdmDivisionStructure" seqName="seg_0"/>
+   <object objectType="Table" objectID="84909E22-7412-1D41-5EF1-9C66E63DBCE6" name="Country" seqName="seg_0"/>
+   <object objectType="Table" objectID="95161BCB-5F64-151B-0155-9041D15015E0" name="Logging" seqName="seg_0"/>
+   <object objectType="Table" objectID="952EBCF5-6B38-9FFF-33D8-8A297CAB4668" name="GenericModule" seqName="seg_0"/>
+   <object objectType="Table" objectID="A44DD66F-3EC7-8D6C-8AFA-B678F4928412" name="ProgramUser" seqName="seg_0"/>
+   <object objectType="Table" objectID="A85F2B0D-9B4A-2378-F16D-938619D0405F" name="BRStateDistrict" seqName="seg_0"/>
+   <object objectType="Table" objectID="AAD00ABC-4200-BA37-64E8-D980B3049761" name="Translation" seqName="seg_0"/>
+   <object objectType="Table" objectID="AB291308-A9DA-1B02-AF67-6BFC92F3524E" name="Person" seqName="seg_0"/>
+   <object objectType="Table" objectID="B26363A1-55A0-8A7D-4F58-ABADFF125C60" name="Routine" seqName="seg_0"/>
+   <object objectType="Table" objectID="B56EBC27-4CF4-3ED4-60EF-A1056AB8A3CC" name="BRAdmRegion" seqName="seg_0"/>
+   <object objectType="Table" objectID="C0190F7E-B901-3BAC-2D55-15215BF526CC" name="Permission" seqName="seg_0"/>
+   <object objectType="Table" objectID="C7F03ABC-7291-EF7B-AAE7-4C58D5BDCB60" name="BRFederalUnit" seqName="seg_0"/>
+   <object objectType="Table" objectID="CDDC6166-5987-05FF-42F7-1D6CDC2575CD" name="BRPhysicalPerson" seqName="seg_0"/>
+   <object objectType="Table" objectID="D3DF4A37-2751-9E41-4E68-E7D605699850" name="Office" seqName="seg_0"/>
+   <object objectType="Table" objectID="DBC581CE-200D-1D65-9AB5-CDB14D65220F" name="Event" seqName="seg_0"/>
+   <object objectType="Table" objectID="E0A75CD1-7857-F210-3CA3-22F2F7AE4D65" name="TimeZone" seqName="seg_0"/>
+   <object objectType="Table" objectID="F6182519-328C-5393-C82E-6316B62D2B87" name="BRMunicipality" seqName="seg_0"/>
+   <object objectType="Table" objectID="FF99F9BB-232D-C39D-77CB-7BAFAD1CD87E" name="LegalEntity" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>

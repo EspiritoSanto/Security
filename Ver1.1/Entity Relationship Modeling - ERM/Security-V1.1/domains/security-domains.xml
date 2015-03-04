@@ -1,0 +1,845 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="security-domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ProgramUserPassword" id="001378BD-3F29-F19E-A2FC-587F7C9A5B6F">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>001378BD-3F29-F19E-A2FC-587F7C9A5B6F</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>255 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ZipcodeObservation" id="021E3288-E25C-B310-9387-F0605B26F672">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>021E3288-E25C-B310-9387-F0605B26F672</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>60 CHAR</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NodeAlias" id="06318574-A259-C8B8-2633-10168EDC1FF3">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>06318574-A259-C8B8-2633-10168EDC1FF3</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>60 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(nodeAlias, &amp;apos;^[A-Z]{1}((([A-Za-z0-9\.-])*[A-Za-z0-9]{1})|([A-Za-z0-9]?))$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="PersonCellPhone2" id="1357173B-1E2A-1E75-E919-F3A891BCCE2E">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>1357173B-1E2A-1E75-E919-F3A891BCCE2E</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>12 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(cellPhone2, &amp;apos;^[1-9]+-[1-9]{1}[0-9]+$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="LegalEntityMunicipalInscription" id="1512A0DD-0D7D-A362-8E45-CB277C1FABEB">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>1512A0DD-0D7D-A362-8E45-CB277C1FABEB</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>40 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(municipalInscription, &amp;apos;^([A-Z0-9]){+}([A-Z0-9-/\.])*([A-Z0-9]{+})$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="TranslationTableName" id="19830B51-9EC7-7753-874B-B7F2008DBB80">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>19830B51-9EC7-7753-874B-B7F2008DBB80</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>22 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="(REGEXP_LIKE(tableName, &amp;apos;^[A-Za-z0-9]{1,22}$&amp;apos;))"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BRPhysicalPersonCPF" id="1A184963-24FB-A762-0245-48981BA33DB4">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>1A184963-24FB-A762-0245-48981BA33DB4</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>11 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(cpf, &amp;apos;^[0-9]{11}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CountryISO3Code" id="1BAEA07D-7B2A-E17C-572C-0E0B63C3B6B1">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>1BAEA07D-7B2A-E17C-572C-0E0B63C3B6B1</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>3 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(iso3Code, &amp;apos;^[A-Z]{3}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="PersonEMail" id="22DEA455-0682-9172-38B8-035AF4C38708">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>22DEA455-0682-9172-38B8-035AF4C38708</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>254 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(eMail, &amp;apos;^([a-zA-Z]+)([a-zA-Z0-9_\.-]+)@([a-z]+)(\d*)\.([a-z\.]{2,6})$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="DateLongFormPattern" id="2408E48D-B307-5B4A-5E19-0EA21515DF4B">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>2408E48D-B307-5B4A-5E19-0EA21515DF4B</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>100 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="RepresentativeHierarchicalLevel" id="24AD0971-BD70-2677-8A62-034063C50132">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>24AD0971-BD70-2677-8A62-034063C50132</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>3</dataTypePrecision>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+         <listOfRanges>
+            <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+               <beginValue>1</beginValue>
+               <endValue>999</endValue>
+            </rangeDef>
+         </listOfRanges>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BRFederalUnitAcronym" id="2AD33DFB-F641-F1E7-03BE-F3C64E4D4BBA">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>2AD33DFB-F641-F1E7-03BE-F3C64E4D4BBA</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>2 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(acronym, &amp;apos;^[A-Z]{2}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CurrencyCode" id="2CF28318-2E68-EB2D-3DFB-FB2A68A90193">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>2CF28318-2E68-EB2D-3DFB-FB2A68A90193</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>3 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(currencyCode, &amp;apos;^[A-Z]{3}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VarcharOf5Bytes" id="318CD61E-B53B-199E-9D25-313D1D949F70">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>318CD61E-B53B-199E-9D25-313D1D949F70</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>5 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="AmountOfDigits" id="323EA779-50FD-EC3A-BC40-B54A37FCC4F5">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>2</dataTypePrecision>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+         <listOfRanges>
+            <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+               <beginValue>0</beginValue>
+               <endValue>99</endValue>
+            </rangeDef>
+         </listOfRanges>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CurrencyNumericCode" id="37500152-44D5-FF27-34CA-37D49E128F2E">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>37500152-44D5-FF27-34CA-37D49E128F2E</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>3</dataTypePrecision>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+         <listOfRanges>
+            <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+               <beginValue>0</beginValue>
+               <endValue>999</endValue>
+            </rangeDef>
+         </listOfRanges>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="EventAlias" id="41FE685A-F3B1-8F8F-E258-CF825EA12E85">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>41FE685A-F3B1-8F8F-E258-CF825EA12E85</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>80 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(eventAlias, &amp;apos;^[A-Z]{1}((([A-Za-z0-9\.-])*[A-Za-z0-9]{1})|([A-Za-z0-9]?))$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="TranslationColumnName" id="4BFD4977-3732-ED3D-348B-BFC3E5C7F851">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>4BFD4977-3732-ED3D-348B-BFC3E5C7F851</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>30 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="(REGEXP_LIKE(columnName, &amp;apos;^[A-Za-z0-9]{1,30}$&amp;apos;))"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="InternationalDialingCode" id="4EF30A01-DD4F-F451-70FE-04823C32B26E">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>4EF30A01-DD4F-F451-70FE-04823C32B26E</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>4</dataTypePrecision>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+         <listOfRanges>
+            <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+               <beginValue>1</beginValue>
+               <endValue>9999</endValue>
+            </rangeDef>
+         </listOfRanges>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BRPhysicalPersonScholarity" id="5455B2E7-8850-E138-15EE-FF485B2ADC85">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>5455B2E7-8850-E138-15EE-FF485B2ADC85</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>3 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <listOfValues>
+            <valueDef value="HED" description="Higher Education"/>
+            <valueDef value="HSC" description="High School"/>
+            <valueDef value="IHE" description="Incomplete Higher Education"/>
+            <valueDef value="IHS" description="Incomplete High School"/>
+            <valueDef value="IMS" description="Incomplete Middle School"/>
+            <valueDef value="MSC" description="Middle School"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="TranslationTranslatedValue" id="5653DF00-308A-5360-11C9-B0291AF3BEAC">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>5653DF00-308A-5360-11C9-B0291AF3BEAC</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>255 CHAR</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="RoundMode" id="64219E1D-1C00-4F32-C547-E9A2FFF75354">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>64219E1D-1C00-4F32-C547-E9A2FFF75354</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>1</dataTypePrecision>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+         <listOfValues>
+            <valueDef value="1" description="UP - Rounding mode to round away from zero."/>
+            <valueDef value="2" description="DOWN - Rounding mode to round towards zero. "/>
+            <valueDef value="3" description="CEILING - Rounding mode to round towards positive infinity."/>
+            <valueDef value="4" description="FLOOR - Rounding mode to round towards negative infinity."/>
+            <valueDef value="5" description="HALF_UP - Rounding mode to round towards &amp;quot;nearest neighbor&amp;quot; unless both neighbors are equidistant, in which case round up."/>
+            <valueDef value="6" description="HALF_DOWN - Rounding mode to round towards &amp;quot;nearest neighbor&amp;quot; unless both neighbors are equidistant, in which case round down."/>
+            <valueDef value="7" description="HALF_EVEN - Rounding mode to round towards the &amp;quot;nearest neighbor&amp;quot; unless both neighbors are equidistant, in which case, round towards the even neighbor."/>
+            <valueDef value="8" description="UNNECESSARY - Rounding mode to assert that the requested operation has an exact result, hence no rounding is necessary."/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="PersonLandline" id="6C4FF2BD-C3D9-35CF-6C5D-C4783E623BF5">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>6C4FF2BD-C3D9-35CF-6C5D-C4783E623BF5</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>12 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(landline, &amp;apos;^[1-9]+-[1-9]{1}[0-9]+$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="DateShortFormPattern" id="6D8BF34F-04A3-4692-6668-7D3E7FFD12F2">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>6D8BF34F-04A3-4692-6668-7D3E7FFD12F2</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>20 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="PersonType" id="7400C37C-4CC0-A338-0782-4CF9B4692D7D">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>7400C37C-4CC0-A338-0782-4CF9B4692D7D</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <listOfValues>
+            <valueDef value="L" description="Legal Entity"/>
+            <valueDef value="P" description="Physical Person"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BRGeneralZipcode" id="74408F8B-0C47-E9A0-E37B-9BB5A38C2A84">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>74408F8B-0C47-E9A0-E37B-9BB5A38C2A84</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>5 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(generalZipcode, &amp;apos;^[0-9]{5}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BRFederalUnitType" id="7999384B-6FB7-2255-22D5-8EF95D20D7D9">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>7999384B-6FB7-2255-22D5-8EF95D20D7D9</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <listOfValues>
+            <valueDef value="C" description="Federal Capital"/>
+            <valueDef value="S" description="State"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ProgramUserLogin" id="808E8366-9AC9-65A0-2F85-EB75E92FFCD7">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>808E8366-9AC9-65A0-2F85-EB75E92FFCD7</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>20 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(login, &amp;apos;^[a-z]+[a-z0-9\.]*[a-z]+$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Gender" id="834EC2F1-631D-5339-54A6-07A681E0D828">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>834EC2F1-631D-5339-54A6-07A681E0D828</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <listOfValues>
+            <valueDef value="F" description="Female"/>
+            <valueDef value="M" description="Male"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="EventType" id="890ECD5A-8C19-BB30-6DF6-4222DD3E43BF">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>890ECD5A-8C19-BB30-6DF6-4222DD3E43BF</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>2</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+         <listOfRanges>
+            <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+               <beginValue>1</beginValue>
+               <endValue>15</endValue>
+            </rangeDef>
+         </listOfRanges>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CotationValue" id="8D0CC296-29B3-6E3B-BE61-459511C11D0B">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>8D0CC296-29B3-6E3B-BE61-459511C11D0B</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>13</dataTypePrecision>
+         <dataTypeScale>4</dataTypeScale>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+         <listOfRanges>
+            <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+               <beginValue>0.0001</beginValue>
+               <endValue>999999999.9999</endValue>
+            </rangeDef>
+         </listOfRanges>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CountryISO2Code" id="8FD6D288-07D1-274B-1C36-66588A24CDD0">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>8FD6D288-07D1-274B-1C36-66588A24CDD0</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>2 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(iso2Code, &amp;apos;^[A-Z]{2}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BRPhysicalPersonOrganDispatcher" id="9B4662C8-858B-E0EF-6A9D-E40A2AC4D70B">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>9B4662C8-858B-E0EF-6A9D-E40A2AC4D70B</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>10 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(organDispatcher, &amp;apos;^([A-Z0-9])+([A-Z0-9-/\.])*([A-Z0-9]+)$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="TimeLongFormPattern" id="9E0214DC-B3D4-D7D0-77B3-2F61C405E29E">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>9E0214DC-B3D4-D7D0-77B3-2F61C405E29E</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>100 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CurrencyInternationalSymbol" id="9F1383CF-FC10-E032-FF0C-8D3E60B4F0DD">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>9F1383CF-FC10-E032-FF0C-8D3E60B4F0DD</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>5 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ZipcodeZipcode" id="AAA7BE72-47A4-7D1B-8CA7-68C991224046">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>AAA7BE72-47A4-7D1B-8CA7-68C991224046</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>8 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(zipcode, &amp;apos;^[A-Z]{1}[0-9]{4}[A-Z]{3}$|^[0-9]{8}$|^[0-9]{7}$|^EC[0-9]{6}$|^[0-9]{5}$|^[0-9]{4}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="TranslationTranslatorAgent" id="AEE687CD-4A15-D5A7-EDC4-539944F4AB72">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>AEE687CD-4A15-D5A7-EDC4-539944F4AB72</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <listOfValues>
+            <valueDef value="S" description="System"/>
+            <valueDef value="U" description="User"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="LegalEntityBRCNPJ" id="B03FFC43-E9D5-1E2E-16D3-BC10A33B5816">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>B03FFC43-E9D5-1E2E-16D3-BC10A33B5816</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>14 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(cnpj, &amp;apos;^[0-9]{14}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="AdmDivisionType" id="B0F88EC2-15FD-B8C3-FD2F-9F7F582C7163">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>B0F88EC2-15FD-B8C3-FD2F-9F7F582C7163</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>4 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <listOfValues>
+            <valueDef value="BRAR" description="Administrative Region Of Brasília"/>
+            <valueDef value="BRFU" description="Brazilian Federal Unit"/>
+            <valueDef value="BRMD" description="Brazilian Municipal District"/>
+            <valueDef value="BRMU" description="Brazilian Municipality"/>
+            <valueDef value="BRSD" description="Brazilian State District"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="PersonCountryISO2Code" id="B1BB4F35-5CB1-B0E6-30FA-0562B1819B94">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>B1BB4F35-5CB1-B0E6-30FA-0562B1819B94</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>2 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(personCountryISO2Code, &amp;apos;^[A-Z]{2}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="TimeShortFormPattern" id="B1FDA45E-A117-B061-1EE1-740BE9542AC7">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>B1FDA45E-A117-B061-1EE1-740BE9542AC7</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>20 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="TimeZoneId" id="B4E84CD8-2E32-DD65-77C2-263076B265BD">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>B4E84CD8-2E32-DD65-77C2-263076B265BD</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>60 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(timeZoneId, &amp;apos;^([A-Z]+([A-Za-z0-9\/+-_]*)?[A-Za-z0-9]+)$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="PersonCellPhone1" id="C508772F-A81E-9155-0839-524F85851782">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>C508772F-A81E-9155-0839-524F85851782</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>12 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(cellPhone1, &amp;apos;^[1-9]+-[1-9]{1}[0-9]+$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="AddressNumberProperty" id="C76BFA7A-7C36-ACA3-CF3F-CA30AFEA61FE">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>C76BFA7A-7C36-ACA3-CF3F-CA30AFEA61FE</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>10 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="RoutineType" id="C7C2475D-4630-333C-2DC1-312763457385">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>C7C2475D-4630-333C-2DC1-312763457385</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <listOfValues>
+            <valueDef value="C" description="Complex routine"/>
+            <valueDef value="D" description="Data entry"/>
+            <valueDef value="P" description="Processing"/>
+            <valueDef value="R" description="Recovery"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="LoggingContent" id="D5138E60-5940-23AA-9E18-65A44B1F5FA7">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>D5138E60-5940-23AA-9E18-65A44B1F5FA7</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>4000</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="LicensedImageAlias" id="D8900E1A-AEE8-A172-90C6-4D277BBD5963">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>D8900E1A-AEE8-A172-90C6-4D277BBD5963</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>60 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(imageAlias, &amp;apos;^[A-Z]{1}((([A-Za-z0-9\.-])*[A-Za-z0-9]{1})|([A-Za-z0-9]?))$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="EventEvent" id="E84E60CB-F2C2-B488-868F-A1489236F37F">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>E84E60CB-F2C2-B488-868F-A1489236F37F</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>80 CHAR</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="IdiomISO2Code" id="EB492E55-858E-889C-B1FD-285D7FCB5393">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>EB492E55-858E-889C-B1FD-285D7FCB5393</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>2 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(iso2Code, &amp;apos;^[a-z]{2}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BRPhysicalPersonMaritalStatus" id="EDA93510-6D8C-9124-1A62-C0BA2CF2EA6C">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>EDA93510-6D8C-9124-1A62-C0BA2CF2EA6C</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <listOfValues>
+            <valueDef value="D" description="Divorced"/>
+            <valueDef value="M" description="Married"/>
+            <valueDef value="S" description="Separated"/>
+            <valueDef value="U" description="Unmarried"/>
+            <valueDef value="W" description="Widower"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="IdiomVariant" id="F18B37EC-00C1-7364-421D-BB95E3D342D6">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>F18B37EC-00C1-7364-421D-BB95E3D342D6</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>2 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(variant, &amp;apos;^[A-Z]{2}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BRPhysicalPersonGeneralRegistration" id="F1900E4A-28AF-710A-B515-F9E36BADD0E3">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>F1900E4A-28AF-710A-B515-F9E36BADD0E3</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>20 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(generalRegistration, &amp;apos;^([A-Z0-9])+([A-Z0-9-/\.])*([A-Z0-9]+)$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="IdiomISO3Code" id="F3777653-B6CF-F9FF-7A3F-1926521162F1">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>F3777653-B6CF-F9FF-7A3F-1926521162F1</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>3 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(iso3Code, &amp;apos;^[a-z]{3}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="AddressZipcode" id="F664CD3E-3CC1-27C9-1804-A37DD39A5C8B">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>F664CD3E-3CC1-27C9-1804-A37DD39A5C8B</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>8 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(zipcode, &amp;apos;^[A-Z]{1}[0-9]{4}([A-Z]{3})?$|^([0-9]{5}([0-9]{3})?)$|^([0-9]{3}([0-9]{4})?)$|^EC[0-9]{6}$|^FIQQ 1ZZ$|^[0-9]{4}$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="PersonUrl" id="F815D4F5-3DAF-604D-96C1-C517AFA48ED6">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>F815D4F5-3DAF-604D-96C1-C517AFA48ED6</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>255 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <checkConstraint>
+            <implementationDef dbType="Oracle Database 11g" definition="REGEXP_LIKE(url, &amp;apos;^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/a-zA-Z0-9_\.-]*)*\/?$&amp;apos;)"/>
+         </checkConstraint>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="AdmDivisionLevel" id="FC96D3C3-DBE3-14A2-6683-A622A32E7D2C">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>FC96D3C3-DBE3-14A2-6683-A622A32E7D2C</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>1</dataTypePrecision>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+         <listOfRanges>
+            <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+               <beginValue>1</beginValue>
+               <endValue>3</endValue>
+            </rangeDef>
+         </listOfRanges>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="LegalEntityType" id="FF5EF421-5BF6-D076-2C02-030B0AB1A963">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>FF5EF421-5BF6-D076-2C02-030B0AB1A963</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <listOfValues>
+            <valueDef value="C" description="Company"/>
+            <valueDef value="E" description="Entity"/>
+            <valueDef value="O" description="Other"/>
+            <valueDef value="P" description="Public Organ"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ProgramUserPasswordType" id="FF7871F4-2F69-72AE-271E-CDBEAB7D5D3C">
+         <createdBy>ES</createdBy>
+         <createdTime>2014-11-22 10:29:04 UTC</createdTime>
+         <generatorID>Gerado pelo usuário</generatorID>
+         <ownerDesignName>Security-V1.1</ownerDesignName>
+         <importedID>FF7871F4-2F69-72AE-271E-CDBEAB7D5D3C</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>1 BYTE</dataTypeSize>
+         <fileName>security-domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <listOfValues>
+            <valueDef value="P" description="Permanent"/>
+            <valueDef value="T" description="Temporary"/>
+         </listOfValues>
+      </Domain>
+   </domains>
+</DomainFile>

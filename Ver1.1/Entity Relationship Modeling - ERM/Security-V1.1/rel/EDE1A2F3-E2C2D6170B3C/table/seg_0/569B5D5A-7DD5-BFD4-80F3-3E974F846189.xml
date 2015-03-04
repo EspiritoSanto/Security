@@ -1,0 +1,253 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="569B5D5A-7DD5-BFD4-80F3-3E974F846189" name="Currency">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>4B3BD862-F929-32F7-BA41-85F301BAA7A3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="37B1B6B9-B4F0-716C-6ED4-57FCEE0AC159">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registo nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>3385214A-E14A-97B3-68D2-1870051B3B58</importedID>
+<constraintName>Currency_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="currency" id="6CC17AED-5579-F666-11DD-80F94C7BABB1">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Denomination of the currency to be displayed in the user interface. The idiom used is the one configured in Licensed table. Can be localized into other idioms.&lt;br/&gt;&lt;br/&gt;Denominação da moeda a ser exibida na interface do úsuário. O idioma usado é aquele configurado na tabela Licensed. Pode ser localizada em outros idiomas.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>29E74B06-EC48-3A02-7202-0EF45EFD54B9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4D9DAAC4-D719-709B-B85E-ED333A54C997</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="currencyCode" id="9E4246B3-DF48-33AE-6CEF-F8E4831ACC88">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:53:52 UTC</createdTime>
+<commentInRDBMS>Standard letter code of this currency. Must be filled with a sequence of three (3) capitalization, according to ISO 4217.&lt;br/&gt;&lt;br/&gt;Código alfabético padrão desta moeda. Deve ser preenchido com uma sequência de 3 (três) letras maiúsculas, conforme ISO 4217.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Currency_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<domain>2CF28318-2E68-EB2D-3DFB-FB2A68A90193</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numericCode" id="8B59AA4A-55AF-4E79-80D1-F70F6BCC6821">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Standard numerical code of this currency. Should be filled with a number between 000 and 999, according to ISO 4217.&lt;br/&gt;&lt;br/&gt;Código numérico padrão desta moeda. Deve ser preenchido com um número entre 000 e 999, conforme ISO 4217.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>DC3B45A1-9C23-C2EB-AA01-5BD2973DDA90</importedID>
+<constraintName>Currency_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<domain>37500152-44D5-FF27-34CA-37D49E128F2E</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="useCustomSettings" id="7947FC41-4180-9F1C-57A4-419185B7E7A3">
+<createdBy>ES</createdBy>
+<createdTime>2014-06-07 12:29:47 UTC</createdTime>
+<commentInRDBMS>Indicates if the currency will use custom settings to localize the user interface. If this column is false definitions of JRE currency database will be used.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Indica se a moeda usará configurações personalizadas para localizar a interaface do usuário. Se esta coluna for falsa, as definições do banco de dados de moedas do JDK serão utilizadas.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Veradeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Currency_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="internationalSymbol" id="34BD701D-B622-EF49-7C55-247C0CC49146">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>International customized symbol of this currency.&lt;br/&gt;&lt;br/&gt;Símbolo internacional personalidado desta moeda.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>C84DF229-E728-74D0-A6D9-E5BBFECACA75</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="symbol" id="99955461-FDEE-9FF7-6A54-CC0A73B064C9">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Local customized symbol of this currency.&lt;br/&gt;&lt;br/&gt;Símbolo personalizado regional desta moeda.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>2B8260BF-2EC7-2B51-2726-3D5D8D0DFC06</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="minusSign" id="F043D291-D1BD-CC96-EA51-210A18706D32">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Custom minus sign used in the formating of this currency.&lt;br/&gt;&lt;br/&gt;Sinal de menos personalizado na formatação desta moeda.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>BA60BA59-05F6-7BA8-9A40-109A512DA3F0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="groupingSeparator" id="A5871A5A-D312-C968-9924-D58EA6C5EFF7">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Custom grouping separator used in the formating of this currency.&lt;br/&gt;&lt;br/&gt;Separador de agrupamento personalizado usado na formatação desta moeda.&lt;br/&gt;</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>9F950885-4F87-893F-9D29-408307128724</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="decimalSeparator" id="F456794A-FB8F-FE80-4371-222E9B99398E">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Custom decimal separator used in the formating of this currency.&lt;br/&gt;&lt;br/&gt;Separador decimal personalizado usado na formatação desta moeda.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>7DB98497-5909-B8E8-0BE5-C035F27A60FC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<domain>318CD61E-B53B-199E-9D25-313D1D949F70</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fractionDigits" id="DDD2A379-A04F-A662-CB77-B5019FB176B3">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Custom amount of fraction digits used in the formating of this currency. A number between 0 and 99.&lt;br/&gt;&lt;br/&gt;Quantidade de dígitos fracionários personalizada usada na formatação desta moeda. Um número entre 0 e 99.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>C2DACE20-01F2-9151-5CAF-22587FE7E708</importedID>
+<constraintName>Currency_Chk_005</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<domain>323EA779-50FD-EC3A-BC40-B54A37FCC4F5</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="active" id="6A431877-C42A-6FB7-2940-08711C861694">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the currency is active or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se a moeda está ativa ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>95CA809A-0A51-DC49-84DB-860D772E1DF4</importedID>
+<constraintName>Currency_Chk_006</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82F2119C-9E9D-FAEB-8C64-A0B11455CAF6" name="Currency_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>AEAFA93A-DA94-84F1-DCBB-09C5A1F94758</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37B1B6B9-B4F0-716C-6ED4-57FCEE0AC159"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A503310-6E06-989D-6ACC-E04134271924" name="Currency_AK_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-11-30 12:49:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E4246B3-DF48-33AE-6CEF-F8E4831ACC88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EE4E3E5-DB6D-511D-E114-FA1B4EFE4832" name="Currency_AK_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-11-30 12:49:32 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B59AA4A-55AF-4E79-80D1-F70F6BCC6821"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

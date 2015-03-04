@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CE2800E9-7FF1-66FE-BC6B-6FDD88F898EE" name="FK_BRPhysicalPerson_001">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-09-12 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>05823A93-CDF2-3EE3-6F95-4C05ACFC6CC1</importedID>
+<containerWithKeyObject>CDDC6166-5987-05FF-42F7-1D6CDC2575CD</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>CDD21CA6-B3E2-162E-6244-7F18A77ED36F</localFKIndex>
+<keyObject>C07821C1-376C-FAAE-202A-AD05DD67ADA0</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<discriminatorValue>BR</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_4" directorySegmentName="seg_0" id="AD7AD422-D496-B226-6BFE-9E794F50F2A2">
+<createdBy>ES</createdBy>
+<createdTime>2014-09-12 12:09:19 UTC</createdTime>
+<comment>The tables in the cyan blue color contains the deployed system records. The user can not add, delete or modify records in these tables.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</Note>

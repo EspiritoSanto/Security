@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A85F2B0D-9B4A-2378-F16D-938619D0405F" name="BRStateDistrict">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:17:14 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="2ECED4A1-B6ED-7694-BAFC-7B0CA68C7D75">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:17:14 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table. Inherited of the AdmDivision table.&lt;br/&gt;&lt;br/&gt;Númeiro que identifica um registro nesta tabela. Herdado da tabela AdmDivision.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>619AD03D-56B1-AB0B-FFFD-8A912B5B673A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="680BEC73-3A4B-6225-D6C1-459D5735B344" referredColumn="619AD03D-56B1-AB0B-FFFD-8A912B5B673A"/>
+</associations>
+</Column>
+<Column name="brFederalUnitId" id="64004F65-A803-CE29-8DB1-B7FBB32BE55F">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:17:14 UTC</createdTime>
+<commentInRDBMS>Brazilian federal unit (higher administrative division) that contains this brazilian state district (administrative division).&lt;br/&gt;&lt;br/&gt;Unidade federativa brasileira (Divisão administrativa superior) que contém este distrito estadual brasileiro (divisão administrativa).</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>618A5544-1372-036D-072A-25B5F92D7A47</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF2ED2AE-0134-D4F7-F88F-2F4698F8AFD2" referredColumn="618A5544-1372-036D-072A-25B5F92D7A47"/>
+</associations>
+</Column>
+<Column name="generalZipcode" id="297B0B7C-580E-0E86-AE69-A1A3B10E6006">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:23:22 UTC</createdTime>
+<commentInRDBMS>Postcode of the 5-digit number used to uniquely identify the brazilian state district. Some Brazilian state districts may not have a general zipcode. In this case, this column is left null.&lt;br/&gt;&lt;br/&gt;CEP de 5 dígitos numéricos usado para identificar o distrito estadual brasileiro. Alguns distritos estaduais brasileiros podem não possuir um CEP geral. Nesse caso, esta coluna é deixada nula.&lt;br/&gt;</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>BRStateDistrict_Chk_001</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>74408F8B-0C47-E9A0-E37B-9BB5A38C2A84</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="328C4BF7-D08A-23BF-6AB0-15A0464F43BE" name="BRStateDistrict_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:17:14 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2ECED4A1-B6ED-7694-BAFC-7B0CA68C7D75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56C050B0-226A-2E94-3FE6-1207D80F1F6F" name="FK_BRStateDistrict_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:17:14 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2ECED4A1-B6ED-7694-BAFC-7B0CA68C7D75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB7A2B12-3866-8BA4-E7A7-AAF4616FE2F5" name="FK_BRStateDistrict_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:17:14 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64004F65-A803-CE29-8DB1-B7FBB32BE55F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

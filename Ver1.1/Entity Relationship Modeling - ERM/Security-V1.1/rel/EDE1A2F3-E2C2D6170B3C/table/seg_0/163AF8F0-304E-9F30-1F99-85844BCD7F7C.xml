@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="163AF8F0-304E-9F30-1F99-85844BCD7F7C" name="BRLegalEntity">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>005C1B81-B548-772C-2933-A51196A01DF2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="1AEC36B0-E871-32A1-8BC6-00DE28D8D000">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table. Inherited of the LegalEntity table.&lt;br/&gt;&lt;br/&gt;Número que identifica uma registro nesta tabela. Herdado da tabela LegalEntity.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>C00619D8-724D-4E04-F274-AD0B2F9FFE20</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>087C3298-12C1-BECD-970E-B79AD1547E4A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A44DB24-9D37-952B-7619-0B486DED7BDA" referredColumn="087C3298-12C1-BECD-970E-B79AD1547E4A"/>
+</associations>
+</Column>
+<Column name="cnpj" id="098A8546-218F-403B-84B3-EA5D45657DE7">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Document number that uniquely indentify a brazilian legal entity. Your shipment is made by Receita Federal do Brasil (RFB).&lt;br/&gt;&lt;br/&gt;Número de documento que identifica uma pessoa jurídica brasileira. Sua expedição é feita pela Receita federal do Brasil (RFB).</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>CB93C3CD-0877-ECE0-0659-00BE557D1B4A</importedID>
+<constraintName>BRLegalEntity_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>B03FFC43-E9D5-1E2E-16D3-BC10A33B5816</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="municipalInscription" id="FFAF2782-5AC3-DC82-7A63-BAC57DB518B5">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Document number that uniquely indentifies a brazilian legal entity within a brazilian municipality or of the Federal District.This shipment is made by public organ denominated Secretaria de Finanças of the brazilian municipality, or of the Federal District, on which the legal entity is located.&lt;br/&gt;&lt;br/&gt;Número de documento que identifica uma pessoa jurídica brasileira dentro de um município brasileiro, ou do Distrito Federal. Esta expedição é feita por um órgão público denominado Secretaria de Finanças do munípio brasileiro, ou do Distrito Federal, onde a pessoa jurídica está loalicazada.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>F4F5EBC5-9F22-68E0-3FA7-A9B2C6452BD3</importedID>
+<constraintName>BRLegalEntity_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1512A0DD-0D7D-A362-8E45-CB277C1FABEB</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtype" id="7FCA4F66-BEA4-BB9B-8FA0-51F5AD9B9E4A">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-30 19:57:31 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the brazilian legal entity. The possible options are:&lt;br/&gt;&lt;br/&gt;G - Global brazilian legal entity&lt;br/&gt;L - Licensed&apos;s brazilian legal entity&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo da pessoa jurídica brasileira. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;G - Pessoa jurídica brasileira global&lt;br/&gt;L - Pessoa jurídica brasileira de licensiado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>BRLegalEntity_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6686FE85-0855-8B63-D766-A6BD53E6AADC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF071A30-E570-3C88-75BA-4AFA53F36EB8" name="BRLegalEntity_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>57B8EC1F-B8D6-7A3F-2445-CB14D08C9664</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AEC36B0-E871-32A1-8BC6-00DE28D8D000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65A848D0-954D-3D26-F435-8C57EFF6BD31" name="FK_BRLegalEntity_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AEC36B0-E871-32A1-8BC6-00DE28D8D000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

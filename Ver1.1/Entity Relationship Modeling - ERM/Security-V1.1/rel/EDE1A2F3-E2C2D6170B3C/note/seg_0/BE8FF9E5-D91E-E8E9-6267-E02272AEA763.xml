@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_21" directorySegmentName="seg_0" id="BE8FF9E5-D91E-E8E9-6267-E02272AEA763">
+<createdBy>ES</createdBy>
+<createdTime>2014-09-12 12:09:19 UTC</createdTime>
+<comment>Not all profiles will be related to a licensed. There are global profiles, used by GN1 to include global records, as well as, there is the user named System, whose profile is named System User.</comment>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+</Note>

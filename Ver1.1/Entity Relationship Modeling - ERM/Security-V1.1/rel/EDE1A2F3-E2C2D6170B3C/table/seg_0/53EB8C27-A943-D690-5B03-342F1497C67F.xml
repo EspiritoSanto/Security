@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="53EB8C27-A943-D690-5B03-342F1497C67F" name="BRMunicipalDistrict">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:27:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="2928467B-AF01-2A18-E9C9-2AA5A4AB05B3">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:27:04 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table. Inherited of the AdmDivision table.&lt;br/&gt;&lt;br/&gt;Númeiro que identifica um registro nesta tabela. Herdado da tabela AdmDivision.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>619AD03D-56B1-AB0B-FFFD-8A912B5B673A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29812D73-6E13-607D-086D-ACE2436858D9" referredColumn="619AD03D-56B1-AB0B-FFFD-8A912B5B673A"/>
+</associations>
+</Column>
+<Column name="brMunicipalityId" id="103AE776-8890-C025-F138-A3CB33C6F454">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:27:04 UTC</createdTime>
+<commentInRDBMS>Brazilian municipality (higher administrative division) that contains this brazilian municipal district (administrative division).&lt;br/&gt;&lt;br/&gt;Município brasileiro (Divisão administrativa superior) que contém este distrito municipal brasileiro (divisão administrativa).</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>05271CF7-05F4-3DC2-FDC0-8C7CBF125C66</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5631422-277B-1F07-E336-45940E63C9AD" referredColumn="05271CF7-05F4-3DC2-FDC0-8C7CBF125C66"/>
+</associations>
+</Column>
+<Column name="generalZipcode" id="56ED7BFC-2B87-AEF2-0015-6208D2468627">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:27:04 UTC</createdTime>
+<commentInRDBMS>Postcode of the 5-digit number used to uniquely identify the brazilian municipal district. Some Brazilian municipal districts may not have a general zipcode. In this case, this column is left null.&lt;br/&gt;&lt;br/&gt;CEP de 5 dígitos numéricos usado para identificar o distrito municipal brasileiro. Alguns distritos municipais brasileiros podem não possuir um CEP geral. Nesse caso, esta coluna é deixada nula.&lt;br/&gt;</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>BRMunicipalDistrict_Chk_001</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>74408F8B-0C47-E9A0-E37B-9BB5A38C2A84</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="17F36BBC-ADC2-5528-7BD4-B3539FCBDB2A" name="BRMunicipalDistrict_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:27:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2928467B-AF01-2A18-E9C9-2AA5A4AB05B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFD853C2-06BE-3D3B-54AE-9D93C1624DCC" name="FK_BRMunicipalDistrict_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:27:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2928467B-AF01-2A18-E9C9-2AA5A4AB05B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2ED075B-44D9-63BB-37F5-2FB804DFE8F8" name="FK_BRMunicipalDistrict_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 10:30:50 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="103AE776-8890-C025-F138-A3CB33C6F454"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

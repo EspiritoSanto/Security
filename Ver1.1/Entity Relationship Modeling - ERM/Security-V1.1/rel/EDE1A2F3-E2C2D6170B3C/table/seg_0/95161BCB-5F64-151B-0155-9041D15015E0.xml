@@ -1,0 +1,245 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="95161BCB-5F64-151B-0155-9041D15015E0" name="Logging">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>183085F2-40B8-A650-C308-7888DCEB6292</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="6A3109DC-B0C6-7038-EED9-672B6B2BD612">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>BDABF853-E82E-6846-0BA7-D86428C9A5AF</importedID>
+<constraintName>Logging_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="instant" id="71755A71-55B6-AC7C-8FB9-D01CE3E64857">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Instant in which the operation, whose content is being recorded in the log of auditing, was completed.&lt;br/&gt;&lt;br/&gt;Instante no qual a operação, cujo conteudo está sendo guardado no log de auditoria, foi concluída.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>4E157741-4F7A-F07E-3606-17D5ED8BF297</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="programUserId" id="DCAA272D-06EE-3575-1D05-135B0D5EFBE3">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>User currently logged into the program.&lt;br/&gt;&lt;br/&gt;Usuário atualmento logado no programa.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>C2CCEDA9-BB0C-ADD9-497C-C46A51675903</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>A7C0BB8A-1594-93C5-98C8-E5445CB3A241</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="277E835D-F878-4B0A-782F-18054B8F3EA3" referredColumn="A7C0BB8A-1594-93C5-98C8-E5445CB3A241"/>
+</associations>
+</Column>
+<Column name="genericModuleId" id="730C0566-0A9F-8B8E-B34C-7634A119F706">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Generic module in which the user is logged into.&lt;br/&gt;&lt;br/&gt;Múdulo genérico no qual o usuário está logado.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>F231BA97-BDD1-8FDE-5704-6401284391DF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>4FE2BB2B-68E2-2205-53F1-F4B18E1F98F3</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DC31AD5-940B-9763-A7AC-95DD2B28A8B1" referredColumn="4FE2BB2B-68E2-2205-53F1-F4B18E1F98F3"/>
+</associations>
+</Column>
+<Column name="profileId" id="8F2618BC-20F3-5EB4-4210-FE60C050A0F6">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Profile with the which the program user is logged into.&lt;br/&gt;&lt;br/&gt;Perfil com o qual o usuário do programa está logado.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>C454FF1A-D743-4674-4CAC-342ABB06806B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>4BD192B8-E182-0B91-E0D6-9A952038E5A5</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5776179E-FC7D-F384-927A-77F7696E207B" referredColumn="4BD192B8-E182-0B91-E0D6-9A952038E5A5"/>
+</associations>
+</Column>
+<Column name="eventId" id="BABA2DA9-397F-497B-1860-204EBF484E54">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Event performed by program user.&lt;br/&gt;&lt;br/&gt;Evento realizado pelo usuário do programa.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>0D1689EB-5C4E-3412-7CE2-370429722DBF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>759D735A-343A-BDF6-FAB3-82CC36551210</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C658745-0573-74DA-B4E9-8FA68EB32CF8" referredColumn="759D735A-343A-BDF6-FAB3-82CC36551210"/>
+</associations>
+</Column>
+<Column name="primaryKey" id="4C58CECF-8837-8185-13E0-1B7B3E59AF1E">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Primary key of the record affected by performed event.&lt;br/&gt;&lt;br/&gt;Chave primária do registro afetado pelo evento realizado.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>9798AAA4-7AB8-E4EE-5578-6313D48B461B</importedID>
+<constraintName>Logging_Chk_002</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="content" id="345E4194-6026-E17B-8875-2427BEAD559A">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Content is being recorded into log of auditing.&lt;br/&gt;&lt;br/&gt;Conteúdo que está sendo registrado no log de auditoria.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>908FFE29-5CC3-A0A3-3752-A9CDE499B23C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D5138E60-5940-23AA-9E18-65A44B1F5FA7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtype" id="B7D35F3C-B921-33EA-7386-8D2453F430BC">
+<createdBy>ES</createdBy>
+<createdTime>2014-11-02 21:36:57 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the logging. The possible options are:&lt;br/&gt;&lt;br/&gt;G - Global logging&lt;br/&gt;L - Licensed&apos;s logging&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo do logging. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;G - Logging global&lt;br/&gt;L - Logging de licensiado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Logging_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6686FE85-0855-8B63-D766-A6BD53E6AADC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="copied" id="CA665A11-DF90-B8B4-85C1-B77EA9190C99">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<commentInRDBMS>Indicates if this record was copied to other media (backup) and can be deleted.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Indica se este registro foi copiado para outra mídia (backup) e pode ser excluído.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>8137ADB5-8BD3-266B-568E-BCACD03C2018</importedID>
+<constraintName>Logging_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8564479D-B670-84BA-B44C-9171E4841439" name="Logging_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>F89E6EED-02EB-8834-161B-B23CD57495A5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A3109DC-B0C6-7038-EED9-672B6B2BD612"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="452F6466-17B3-36CE-290D-CC6942879030" name="FK_Logging_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCAA272D-06EE-3575-1D05-135B0D5EFBE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A34ACFB5-260B-B50D-FD11-60DCFFA27F2E" name="FK_Logging_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="730C0566-0A9F-8B8E-B34C-7634A119F706"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4877E49-04DF-B606-0EAF-3DE5F1114796" name="FK_Logging_003">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F2618BC-20F3-5EB4-4210-FE60C050A0F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32673923-8F7A-8587-C9F7-25664A41072C" name="FK_Logging_004">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BABA2DA9-397F-497B-1860-204EBF484E54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B56EBC27-4CF4-3ED4-60EF-A1056AB8A3CC" name="BRAdmRegion">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 11:08:27 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="10F0F17D-DFB1-2EE5-F95E-0192E9BEC78C">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 11:08:27 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table. Inherited of the AdmDivision table.&lt;br/&gt;&lt;br/&gt;Númeiro que identifica um registro nesta tabela. Herdado da tabela AdmDivision.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>619AD03D-56B1-AB0B-FFFD-8A912B5B673A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2EED094-DA47-7F0A-AE94-7AEDEC9AF70E" referredColumn="619AD03D-56B1-AB0B-FFFD-8A912B5B673A"/>
+</associations>
+</Column>
+<Column name="brFederalUnitId" id="C657B2BC-EF13-C823-6BD7-DC92E16ED121">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 11:08:27 UTC</createdTime>
+<commentInRDBMS>Brazilian federal unit (higher administrative division) that contains this administrative region of Brasília (administrative division).&lt;br/&gt;&lt;br/&gt;Unidade federativa brasileira (Divisão administrativa superior) que contém esta região administrativa de Brasília (divisão administrativa).</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>618A5544-1372-036D-072A-25B5F92D7A47</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8121E3D1-4851-3D7F-010C-A5A933D4448F" referredColumn="618A5544-1372-036D-072A-25B5F92D7A47"/>
+</associations>
+</Column>
+<Column name="generalZipcode" id="C0DFDFF4-C9B4-35B0-C820-4669A5AC5DBF">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 11:08:27 UTC</createdTime>
+<commentInRDBMS>Postcode of the 5-digit number used to uniquely identify the brazilian administrative region. Some Brazilian administrative regions may not have a general zipcode. In this case, this column is left null.&lt;br/&gt;&lt;br/&gt;CEP de 5 dígitos numéricos usado para identificar a região administrativa brasileira. Alguns regiões administrativas brasileiras podem não possuir um CEP geral. Nesse caso, esta coluna é deixada nula.&lt;br/&gt;</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>BRAdmRegion_001</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>74408F8B-0C47-E9A0-E37B-9BB5A38C2A84</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93FAC52D-8EB0-C9C4-6A92-E53B3D08F63B" name="BRAdmRegion_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 11:08:27 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10F0F17D-DFB1-2EE5-F95E-0192E9BEC78C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1515E21-B820-F8C8-29F8-F27EBB26CDB1" name="FK_BRAdmRegion_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 11:08:27 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10F0F17D-DFB1-2EE5-F95E-0192E9BEC78C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3A67F0A-C3CE-4C58-C8B8-2763C4724386" name="FK_BRAdmRegion_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-15 11:08:27 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C657B2BC-EF13-C823-6BD7-DC92E16ED121"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

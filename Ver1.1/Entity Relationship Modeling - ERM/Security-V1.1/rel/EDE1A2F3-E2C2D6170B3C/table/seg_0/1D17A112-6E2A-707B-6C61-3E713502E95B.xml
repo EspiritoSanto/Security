@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D17A112-6E2A-707B-6C61-3E713502E95B" name="CurrencyQuotation">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 15:27:41 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="8FE473BC-D6EA-AB66-A51B-2CE3E4067EAD">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 15:34:45 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>CurrencyQuotation_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="quotationDate" id="C225F977-3B37-F48C-A639-D826FA7398D7">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 15:34:45 UTC</createdTime>
+<commentInRDBMS>Date of the quotation.&lt;br/&gt;&lt;br/&gt;Data da cotação.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0C45F897-21BA-F2A8-78F1-03566DFCFEC6</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quoteCurrencyId" id="4A47881B-2973-D70F-47FA-47F5E4429A7A">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 15:38:42 UTC</createdTime>
+<commentInRDBMS>Currency that will be quoted.&lt;br/&gt;&lt;br/&gt;Moeda que será cotada.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>37B1B6B9-B4F0-716C-6ED4-57FCEE0AC159</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA0068AF-D6E0-D4A9-6419-AD13F4045DAA" referredColumn="37B1B6B9-B4F0-716C-6ED4-57FCEE0AC159"/>
+</associations>
+</Column>
+<Column name="referenceCurrencyId" id="4667D0DE-EDDF-DC8E-C066-78E214CBBAC7">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 15:42:35 UTC</createdTime>
+<commentInRDBMS>Currency that will be referenced.&lt;br/&gt;&lt;br/&gt;Moeda que será referenciada.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>37B1B6B9-B4F0-716C-6ED4-57FCEE0AC159</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A400363A-7B21-E2D7-31A9-57238CDA4CF4" referredColumn="37B1B6B9-B4F0-716C-6ED4-57FCEE0AC159"/>
+</associations>
+</Column>
+<Column name="quotationValue" id="FEE6753E-426F-10C2-5A9E-9D476634EB7A">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 15:34:45 UTC</createdTime>
+<commentInRDBMS>Cotation value of the currency that will be referenced.&lt;br/&gt;&lt;br/&gt;Valor da cotação da moeda que será referenciada.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>CurrencyQuotation_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8D0CC296-29B3-6E3B-BE61-459511C11D0B</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0.0001</beginValue>
+<endValue>999999999.9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="subtype" id="1F72AC8C-6A1C-F969-A5A3-2A64ADD16198">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-29 12:48:33 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the currency quotation. The possible options are:&lt;br/&gt;&lt;br/&gt;G - Global currency quotation&lt;br/&gt;L - Licensed&apos;s currency quotation&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo da cotação de moeda. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;G - Cotação de moeda global&lt;br/&gt;L - Cotação de moeda de licensiado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>CurrencyQuotation_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6686FE85-0855-8B63-D766-A6BD53E6AADC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="licensedId" id="0152C423-59DF-2BEF-ECBE-BBF8420C013B">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 16:09:17 UTC</createdTime>
+<commentInRDBMS>Licensed to which this record belongs. Quotations registered by the GN1 are global and are not related to a licensed.&lt;br/&gt;&lt;br/&gt;Licenciado a quem o registro pertence. Cotações registradas pela GN1 são globais e não estão relacionadas a um licenciado.&lt;br/&gt;</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>9AC1631A-CE63-D3D7-4C5F-B37C3722511B</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDCB066D-B2FF-30C8-EFBA-F4866A07F850" referredColumn="9AC1631A-CE63-D3D7-4C5F-B37C3722511B"/>
+</associations>
+</Column>
+<Column name="deleted" id="ADE870AE-42DB-14C3-8183-C8C629E926C8">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 15:44:25 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the currency cotation is deleted or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se a cotação da moeda foi excluída ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>CurrencyQuotation_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58550FC0-FF34-192B-85BE-A05B04B662CA" name="CurrencyQuotation_PK">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 15:45:16 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FE473BC-D6EA-AB66-A51B-2CE3E4067EAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCE0E66D-89C4-C08A-6845-2CE4F54E4497" name="FK_CurrencyQuotation_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 15:38:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A47881B-2973-D70F-47FA-47F5E4429A7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="668D0678-7322-4B51-E95C-636EBDCEDC81" name="FK_CurrencyQuotation_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 15:42:35 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4667D0DE-EDDF-DC8E-C066-78E214CBBAC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6305E679-2AD5-D771-9500-F343F32A145A" name="FK_CurrencyQuotation_003">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-30 16:09:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0152C423-59DF-2BEF-ECBE-BBF8420C013B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

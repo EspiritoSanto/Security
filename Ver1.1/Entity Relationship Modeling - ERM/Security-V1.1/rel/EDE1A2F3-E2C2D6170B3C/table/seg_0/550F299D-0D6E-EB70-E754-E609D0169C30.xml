@@ -1,0 +1,248 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="550F299D-0D6E-EB70-E754-E609D0169C30" name="Collaborator">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>69CF45C3-9A62-18CD-F43D-969AD576416A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B400F4D4-6FCF-8A4F-723E-AAEADA3BF38B">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>BC219215-AF7B-9A35-8AD9-F09481C28C8D</importedID>
+<constraintName>Representative_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="legalEntityId" id="7EEB3B2C-0157-EE40-5D6A-4A016779CA02">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Legal entity object of the collaboration.&lt;br/&gt;&lt;br/&gt;Pessoa Jurídica objeto da colaboração.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>529BECB0-89C4-D033-AC5F-31C375643123</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>087C3298-12C1-BECD-970E-B79AD1547E4A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07E3C9C8-58F3-088A-A9C3-2B55FD8EB633" referredColumn="087C3298-12C1-BECD-970E-B79AD1547E4A"/>
+</associations>
+</Column>
+<Column name="physicalPersonId" id="708B0705-F411-F6CC-C4A4-AE01DE13BBF5">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Collaborator.&lt;br/&gt;&lt;br/&gt;Colaborador.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>841DFC58-E476-E5B6-1DF0-848505490FBE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>7BE05C53-1625-AF22-1B02-D14BC8355DDD</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37F24F30-C80C-71C5-075F-8E527956AAE3" referredColumn="7BE05C53-1625-AF22-1B02-D14BC8355DDD"/>
+</associations>
+</Column>
+<Column name="officeId" id="C622E3C3-BAF3-DB6F-EA6F-91BD3364C21D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Office of the collaborator within the legal entity.&lt;br/&gt;&lt;br/&gt;Função do colaborador dentro da pessoa jurídica.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>971C17CB-1A3A-2C78-441F-AA537260B39C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>FF484689-DD47-8484-3B1C-5C0472207475</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D55C7301-DEFD-6169-441D-0CCA2601E91B" referredColumn="FF484689-DD47-8484-3B1C-5C0472207475"/>
+</associations>
+</Column>
+<Column name="hierarchicalLevel" id="F441730F-CCCE-1EA3-7726-62216B361D62">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Hierarchical level of the collaborator within the legal entity. Can be a number between 1 and 999.&lt;br/&gt;&lt;br/&gt;Nível hierárquico do colaboradordentro da pessoa jurídica. Pode ser um número entre 1 e 999.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>D778DDB1-5BDA-B030-A5B6-F02A4D642C29</importedID>
+<constraintName>Representative_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>24AD0971-BD70-2677-8A62-034063C50132</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="startDate" id="66A1A887-3084-7505-229B-150BA1E80066">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Begining of the period on which the collaborator in question exercised its office.&lt;br/&gt;&lt;br/&gt;Início do perríodo no qual o colaborador em questão exerceu seu cargo.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>ECE598DF-537B-C438-CC76-A75E634B5BBE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="endDate" id="FF9ED96C-8F83-F198-A18F-692EAF7BE398">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>End of the period on which the collaborator in question exercised its office. If the office is in effect, its value must be null.&lt;br/&gt;&lt;br/&gt;Fim do período no qual o colaborador em questão exerceu sua administração. Se a administração está em vigor, este valor deve ser nulo.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>65901490-3FD7-CED2-C907-3CC22DB6E49B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="legalSupport" id="12FF6D6A-E586-67A5-CC4B-78F1FDBFFF1E">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Legal support to the office exercised by collaborator in question.&lt;br/&gt;&lt;br/&gt;Apoio legal para o cargo exercído pelo representante em questão.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>B7AA1531-2D0A-7EBA-04C2-120AD13FB607</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F7AE3742-EC13-2455-8D4A-B68364EA0331</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtype" id="52470D30-32C2-97FE-71F6-2645A187E187">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-29 13:25:14 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the collaborator. The possible options are:&lt;br/&gt;&lt;br/&gt;G - Global collaborator&lt;br/&gt;L - Licensed&apos;s collaborator&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo do collaborator. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;G - Colaborador global&lt;br/&gt;L - Colaborador de licensiado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>Representative_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6686FE85-0855-8B63-D766-A6BD53E6AADC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="24D97B3D-D3AF-26E5-2E70-46F50681670D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the collaborator is active or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o colaborador está ativo ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro&lt;br/&gt;</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>6EC4962D-0A4E-4834-7245-EB4477141158</importedID>
+<constraintName>Representative_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="deleted" id="6E0FE811-609C-A6BF-2F82-EBB1CB9D73EF">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Flag that indicates if the collaborator was deleted or not.&lt;br/&gt;&lt;br/&gt;0 - False&lt;br/&gt;1 - True&lt;br/&gt;&lt;br/&gt;Sinal que indica se o colaborador foi excluído ou não.&lt;br/&gt;&lt;br/&gt;0 - Falso&lt;br/&gt;1 - Verdadeiro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>99E75CBB-20E2-93D3-9061-BB446234F298</importedID>
+<constraintName>Representative_Chk_005</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EBB06E8A-E03D-3A5B-66BF-936ED6AB2B53</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="507B7341-4D80-9988-E25F-A14CD606FA99" name="Collaborator_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>25D7FE9D-F6B6-13D3-7AF3-F6FA05D7D269</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B400F4D4-6FCF-8A4F-723E-AAEADA3BF38B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CA1ACAC-51EC-A981-B5D1-B9B79E77EC13" name="FK_Collaborator_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EEB3B2C-0157-EE40-5D6A-4A016779CA02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6F4A306-7006-0D7B-022F-33B0E2760F23" name="FK_Collaborator_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="708B0705-F411-F6CC-C4A4-AE01DE13BBF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA881FCB-6EF5-C20D-A7E5-28EEDED58B0A" name="FK_Collaborator_003">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C622E3C3-BAF3-DB6F-EA6F-91BD3364C21D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

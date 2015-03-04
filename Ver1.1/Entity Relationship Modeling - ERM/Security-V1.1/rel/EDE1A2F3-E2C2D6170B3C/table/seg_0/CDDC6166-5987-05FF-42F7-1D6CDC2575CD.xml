@@ -1,0 +1,198 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDDC6166-5987-05FF-42F7-1D6CDC2575CD" name="BRPhysicalPerson">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>CD4B6DE0-416F-F0A3-2BFE-5737F6E520F3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C99FAD78-7AD8-8355-E480-771273333956">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Number that uniquely identifies a record in this table. Inherited of the PhysicalPerson table.&lt;br/&gt;&lt;br/&gt;Número que identifica um registro nesta tabela. Herdado da tabela PhysicalPerson.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>E5B240F5-BCA7-FD87-3958-BC010455B8C9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>7BE05C53-1625-AF22-1B02-D14BC8355DDD</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE2800E9-7FF1-66FE-BC6B-6FDD88F898EE" referredColumn="7BE05C53-1625-AF22-1B02-D14BC8355DDD"/>
+</associations>
+</Column>
+<Column name="municipalityNaturalnessId" id="46347547-5428-F6A8-1EA8-9A9F2B839140">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Municipality on which the brazilian physical person was born.&lt;br/&gt;&lt;br/&gt;Município no qual a pessoa física brasileira nasceu.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>C260E959-840E-12E3-007E-5BFCEFC92D40</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>05271CF7-05F4-3DC2-FDC0-8C7CBF125C66</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BF85803-46A6-0E7B-F84D-D4A50BD11E6C" referredColumn="05271CF7-05F4-3DC2-FDC0-8C7CBF125C66"/>
+</associations>
+</Column>
+<Column name="maritalStatus" id="BB05CE24-976D-51EB-E572-B1AEB38595B0">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Current marital status of the brazilian physical person. The possible options in the Brazil are:&lt;br/&gt;&lt;br/&gt;U - Unmarried&lt;br/&gt;M - Married&lt;br/&gt;D - Divorced&lt;br/&gt;S - Separated&lt;br/&gt;W - Widower&lt;br/&gt;&lt;br/&gt;Estado civil atual da pessoa física brasileira. As possíveis opções no Brasil são:&lt;br/&gt;&lt;br/&gt;U - Solteiro(a)&lt;br/&gt;M - Casado(a)&lt;br/&gt;D - Divorciado(a)&lt;br/&gt;S - Separado(a)&lt;br/&gt;W - Viúvo(a)</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>CF11E4B8-5A9B-4AA0-DAAE-611F142714DC</importedID>
+<constraintName>BRPhysicalPerson_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>EDA93510-6D8C-9124-1A62-C0BA2CF2EA6C</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cpf" id="330E4C8C-F17D-5F23-EC42-9496ED6DAB13">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Document number thar uniquely indentify a brazilian physical person. Your shipment is made by Receita Federal do Brasil (RFB).&lt;br/&gt;&lt;br/&gt;Número de documento que identifica uma pessoa física brasileira. Sua expedição é feita pela Receita Federal do Brasil (RFB).</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>2891DDD2-E00D-87A7-6090-2C035EAB1FB1</importedID>
+<constraintName>BRPhysicalPerson_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>1A184963-24FB-A762-0245-48981BA33DB4</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="generalRegistration" id="E1851622-1C63-975D-B9AD-5A4BE9EBD073">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Document number thar uniquely indentify a brazilian physical person withing a brazilian federal unit. Its shipment is made by public organ denominated Secretaria de Segurança Pública (SSP) of a brazilian federal unit.&lt;br/&gt;&lt;br/&gt;Número de documento que identifica uma pessoa física brasileira dentro de uma unidade federativa brasileira. Sua expedição é feita por um órgão público denominado Secretaria de Segurança Pública (SSP) de uma unidade federativa brasileira.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>CBEEC21D-CF9B-BE45-69C2-DA01B3BE0754</importedID>
+<constraintName>BRPhysicalPerson_Chk_003</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1900E4A-28AF-710A-B515-F9E36BADD0E3</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="organDispatcher" id="D9501D30-B898-1511-A067-4F7FA93EBD7D">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Organ dispatcher of the general registration.&lt;br/&gt;&lt;br/&gt;Órgão expedidor do registro geral (RG).</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>154776DC-0DC8-C0D1-0571-D063A0986442</importedID>
+<constraintName>BRPhysicalPerson_Chk_004</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9B4662C8-858B-E0EF-6A9D-E40A2AC4D70B</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="federalUnitDispatcherId" id="BAC70298-AED7-E697-78C7-172EB1A85569">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Federal unit where the general registration was dispatched.&lt;br/&gt;&lt;br/&gt;Unidade federativa onde o registro geral (RG) foi expedido.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>E22A6374-1243-8F68-1ECC-445EED08D50E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>129F0E8C-0675-3528-FDAE-B5E5E50F3175</domain>
+<delegate>618A5544-1372-036D-072A-25B5F92D7A47</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A72DD91C-7107-CBCA-67C6-E176D080D08D" referredColumn="618A5544-1372-036D-072A-25B5F92D7A47"/>
+</associations>
+</Column>
+<Column name="scholarity" id="FD4E939F-5682-62D3-1B41-D9E72F66E741">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<commentInRDBMS>Grade level of the brazilian physical person. The possible options are:&lt;br/&gt;&lt;br/&gt;MSC - Middle School&lt;br/&gt;IMS - Incomplete Middle School&lt;br/&gt;HSC - High School&lt;br/&gt;IHS - Incomplete High School&lt;br/&gt;HED - Higher Education&lt;br/&gt;IHE - Incomplete Higher Education&lt;br/&gt;&lt;br/&gt;Nível de escolaridade de uma pessoa física brasileira. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;MSC - Ensino Fundamental&lt;br/&gt;IMS - Ensino Fundamental Incompleto&lt;br/&gt;HSC - Ensino Médio&lt;br/&gt;IHS - Ensino Médio Incompleto&lt;br/&gt;HED - Ensino Superior&lt;br/&gt;IHE - Ensino Superior Incompleto</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>FEBEB19F-A888-993A-ECED-2D6CF367A9E7</importedID>
+<constraintName>BRPhysicalPerson_Chk_005</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>5455B2E7-8850-E138-15EE-FF485B2ADC85</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtype" id="4F3E329D-D6DA-A14D-2609-C981E79F25F5">
+<createdBy>ES</createdBy>
+<createdTime>2014-10-30 19:54:41 UTC</createdTime>
+<commentInRDBMS>Character flag that indicate the subtype of the brazilian physical person. The possible options are:&lt;br/&gt;&lt;br/&gt;G - Global brazilian physical person&lt;br/&gt;L - Licensed&apos;s brazilian physical person&lt;br/&gt;&lt;br/&gt;Sinal carácter que indica o subtipo da pessoa física brasileira. As opções possíveis são:&lt;br/&gt;&lt;br/&gt;G - Pessoa física brasileira global&lt;br/&gt;L - Pessoa física brasileira de licensiado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<constraintName>BRPhysicalPerson_Chk_006</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6686FE85-0855-8B63-D766-A6BD53E6AADC</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3D22781-EA0C-206D-DC8E-EAFE2F65A6DB" name="BRPhysicalPerson_PK">
+<sourceDDLFile>GN1-Security-V1.1-Oracle11gXE.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>A374D085-D104-C356-7E62-9B46C3B29EBE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C99FAD78-7AD8-8355-E480-771273333956"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CDD21CA6-B3E2-162E-6244-7F18A77ED36F" name="FK_BRPhysicalPerson_001">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C99FAD78-7AD8-8355-E480-771273333956"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CAF6D2C0-7BBD-CC65-721C-D714AA58DC41" name="FK_BRPhysicalPerson_002">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46347547-5428-F6A8-1EA8-9A9F2B839140"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D1417EE-E9C0-220D-80EA-79B2A02EB599" name="FK_BRPhysicalPerson_003">
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 14:23:09 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAC70298-AED7-E697-78C7-172EB1A85569"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

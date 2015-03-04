@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D65748A-4FB1-A196-A25A-70E38D3C203F" name="SequenceGenerator">
+<sourceDDLFile>00Infrastructure.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 10:34:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>1F1A3EA0-7F3A-7413-3746-C7A3D987F3B4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="103F2837-1157-9B48-33AA-4C04E54FB44C">
+<sourceDDLFile>00Infrastructure.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 10:34:45 UTC</createdTime>
+<commentInRDBMS>String that uniquely identifies a record in this table.&lt;br/&gt;&lt;br/&gt;String que identifica um registro nesta tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>063874A9-946A-05B3-7B6B-3703EBF0F4D0</importedID>
+<constraintName>SequenceGenerator_Chk_001</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<domain>B2BF9A5F-FC48-F89A-7AB6-A224656CD691</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="value" id="0395C7FA-A1C5-EACE-5A7E-C64A4EA041CF">
+<sourceDDLFile>00Infrastructure.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 10:34:45 UTC</createdTime>
+<commentInRDBMS>Value of the last generated id or 0 (zero) if no id has been generated.&lt;br/&gt;&lt;br/&gt;Valor do último id gerado ou 0 (zero) se não houver id gerado.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>155BC766-3786-149D-532A-B3D0B8D14918</importedID>
+<constraintName>SequenceGenerator_Chk_002</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>28</dataTypePrecision>
+<domain>BAE3EA2D-EE9B-D5C3-D043-40B15E3A5388</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999999999999999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F324E7E-27D1-7AEF-38EA-8A4F002DC32D" name="SequenceGenerator_PK">
+<sourceDDLFile>00Infrastructure.ddl</sourceDDLFile>
+<createdBy>ES</createdBy>
+<createdTime>2014-05-25 10:34:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Security-V1.1</ownerDesignName>
+<importedID>DA6CE448-31EA-8363-3FB4-2A2DD7B5F802</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="103F2837-1157-9B48-33AA-4C04E54FB44C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
